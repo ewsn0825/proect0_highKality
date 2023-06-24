@@ -10,7 +10,7 @@ header{
 }
 
 .headerContainer{
-  @include paddingPct(20);
+  @include paddingPct(15);
   position: relative;
 }
 
@@ -22,12 +22,14 @@ header{
 }
 
 .logoContainer{
-  @include flexbox;
+  @include flexbox($justify:space-between,$items:center);
+  column-gap: 10px;
+  font-weight: bold;
+  font-size: 18px
 }
 
-h1{
-  // @include a11yHidden;
-}
+
+
 
 .searchForm{
 
@@ -37,7 +39,7 @@ h1{
 
   &__input{
 
-    width: 70%;
+    width: 100%;
     @include padding(15px);
     border: 1px solid $primary;
     border-radius: 3px;
@@ -59,7 +61,7 @@ h1{
   
   &__list{
     
-    font-weight: 500;
+    font-weight: 600;
     width: 500px;
     @include flexbox($justify:space-around);
   }
@@ -68,24 +70,30 @@ h1{
 // 헤더 배너 영역
 .headerBanner{
 
-  font-weight: 400;
+  display: inline-flex;
+  flex-flow: row wrap;
+  // justify-content: space-between;
+  align-items: center;
+  // font-weight: 400;
   // position: relative;
-  @include paddingPct(20);
+  @include paddingPct(15);
   @include paddingY(10px);
   
   background: $primary;
   color: $white;
   // position: fixed;
   
-  text-align: center;
+  // text-align: center;
   
   // @include flexbox;
   order: -1;
 
-
   &__link{
-    // transform: translateY(-60%);
-    display: block;
+    padding: 0;
+    text-align: center;
+    
+    display: inline-block;
+    // flex-grow: 1;
   }
 }
 
@@ -96,7 +104,7 @@ h1{
   position: absolute;
   // top: 50px;
   top:0;
-  right: 20%;
+  right: 15%;
   // top: 50%;
 
 }
