@@ -337,6 +337,7 @@ body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font: inherit;
   background-color: #fff;
+  overflow: scroll;
 }
 
 /* 유연한 미디어 */
@@ -367,6 +368,52 @@ legend {
   margin: -1px;
 }
 
+.searchIcon {
+  background: url("../../images/Icon/Search.png") no-repeat;
+  width: 40px;
+  height: 40px;
+  border: 0;
+}
+
+.cancelIcon {
+  background: url("../../images/Icon/Cancel.png") no-repeat;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  float: right;
+}
+
+.heartIcon {
+  display: block;
+  background: url("../../images/Icon/Heart.png") no-repeat;
+  width: 32px;
+  height: 30px;
+  border: 0;
+}
+
+.locationIcon {
+  display: block;
+  background: url("../../images/Icon/Location.png") no-repeat;
+  width: 32px;
+  height: 30px;
+  border: 0;
+}
+
+.cartIcon {
+  display: block;
+  background: url("../../images/Icon/Cart-black.png") no-repeat;
+  width: 32px;
+  height: 30px;
+  border: 0;
+}
+
+.logoKarly {
+  display: block;
+  background: url("../../images/logo.png") no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
 header {
   display: flex;
   flex-flow: column nowrap;
@@ -375,7 +422,29 @@ header {
   color: #001433;
 }
 
-h1 {
+.headerContainer {
+  padding-left: 20%;
+  padding-right: 20%;
+  position: relative;
+}
+
+.searchContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.logoContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.searchForm label {
   overflow: hidden;
   position: absolute !important;
   clip: rect(0, 0, 0, 0);
@@ -384,14 +453,22 @@ h1 {
   height: 1px;
   margin: -1px;
 }
+.searchForm__input {
+  width: 70%;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  border: 1px solid #5F0080;
+  border-radius: 3px;
+}
 
-.searchContainer {
+.memberIcon {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  padding-top: 40px;
-  padding-bottom: 10px;
+  column-gap: 20px;
 }
 
 .nav {
@@ -412,9 +489,11 @@ h1 {
 }
 
 .headerBanner {
-  position: relative;
+  font-weight: 400;
   padding-left: 20%;
   padding-right: 20%;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
   background: #5F0080;
   color: #ffffff;
   text-align: center;
@@ -430,8 +509,8 @@ h1 {
   justify-content: flex-end;
   align-items: stretch;
   position: absolute;
-  top: 50px;
-  right: 0;
+  top: 0;
+  right: 20%;
 }
 
 footer {
