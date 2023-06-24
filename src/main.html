@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메인 페이지</title>
+    <!-- <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
+  <link rel="stylesheet" href="/style/index.css" /> -->
+  </head>
+
+  <body>
+    <header>
+      <!-- 서치박스 영역 -->
+      <div>
+        <!-- logo css에서 백그라운드 이미지 처리-->
+        <div class="logobox">
+          <h1>
+            <a href="/" class="logo">마켓칼리</a>
+          </h1>
+          <!-- N 이미지 처리 해주어야함 -->
+          <span>
+            <a href="/">마켓칼리</a>
+            <span>|</span>
+            <a href="/">뷰티칼리</a>
+          </span>
+        </div>
+        <!-- 검색 영역 -->
+        <form action="/" method="post">
+          <label for="search__input"></label>
+          <input type="search" id="search__input" />
+          <button><img src="주소" alt="검색" /></button>
+        </form>
+
+        <!-- 아이콘 영역 -->
+        <ul>
+          <li><a href="/" aria-label="배송지 설정"></a></li>
+          <li><a href="/" aria-label="찜하기"></a></li>
+          <li><a href="/" aria-label="장바구니"></a></li>
+        </ul>
+      </div>
+
+      <!-- 네비게이션 영역 -->
+      <nav>
+        <!-- 햄버거 버튼 카테고리 -->
+        <button></button>
+        <ul>
+          <li><a href="/">신상품</a></li>
+          <li><a href="/">베스트</a></li>
+          <li><a href="/">알뜰쇼핑</a></li>
+          <li><a href="/">특가/혜택</a></li>
+        </ul>
+
+        <a href="/"> <span>샛별&#183;낯 </span>배송안내 </a>
+      </nav>
+
+      <!-- 회원가입 영역 -->
+      <ul class="memberOnly">
+        <li>
+          <a href="/">로그인 </a>
+        </li>
+        <li>
+          <span class="divider" aria-hidden="true">ㅣ</span>
+          <a href="/">회원가입</a>
+        </li>
+        <li>
+          <span class="divider" aria-hidden="true">ㅣ</span>
+          <a href="/">로그인</a>
+        </li>
+        <li>
+          <span class="divider" aria-hidden="true">ㅣ</span>
+          <a href="/">고객센터</a>
+
+          <!-- 접어넣기 기호 -->
+          <span></span>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="mainBanner">
+        <h2 class="a11yHidden">메인 배너</h2>
+        <figure class="mainBanner__imageBox">
+          <img class="mainBanner__image" src="/" alt="메인 광고배너 이미지" srcset="/"></img>
+            <figcaption class="a11yHidden">컬리 장보기의 특권&#44; 이 주의 특가 한 눈에 보기&#44; 우측 상단 특가 혜택에서 확인하세요</figcaption>
+          
+        </figure>
+        <button class="mainBanner__leftArrow" aria-label="메인배너 왼쪽으로 가기 버튼"></button>
+        <button class="mainBanner__rightArrow" aria-label="메인배너 오른쪽으로 가기 버튼"></button>
+      </section>
+      <section class="recommendProduct">
+        <h2 class="recommendProduct__title" aria-label="오늘 추천 상품">이 상품 어때요?</h2>
+        <div class="recommendProduct__product" aria-label="상품 1">
+          <figure class="recommendProduct__image"><img src="/" alt="풀무원 탱탱쫄면 4개입 이미지" /></figure>
+          <a href="/" aria-label="풀무원 탱탱쫄면 4개입">[풀무원] 탱탱쫄면 (4개입)</a>
+          <span aria-label="가격 4980 원">4,980 원</span>
+          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
+        </div>
+        <div class="recommendProduct__product" aria-label="상품 2">
+          <figure class="recommendProduct__image"><img src="/" alt="온더바디 죠르디 시카 자석 선쿠션 이미지" /></figure>
+          <a href="/" aria-label="온더바디 죠르디 시카 자석 선쿠션">[온더바디] 죠르디 시카 자석 선쿠션</a>
+          <span aria-label="가격 32500 원">32,500 원</span>
+          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
+        </div>
+        <div class="recommendProduct__product" aria-label="상품 3">
+          <figure class="recommendProduct__image"><img src="/" alt="유기농 밀키퀀 현미 이미지" /></figure>
+          <a href="/" aria-label="유기농 밀키퀀 현미 4키로그램">유기농 밀키퀀 현미 4kg</a>
+          <span aria-label="가격 4980 원">4,980 원</span>
+          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
+        </div>
+        <div class="recommendProduct__product" aria-label="상품 4">
+          <figure class="recommendProduct__image"><img src="/" alt="프로쉬 베이비 세탁세 이미지" /></figure>
+          <a href="/" aria-label="프로쉬 베이비 세탁세">[프로쉬] 베이비 세탁세</a>
+          <span aria-label="세일 24%">24%</span>
+          <span aria-label="가격 18900 원">189,000 원</span>
+          <span aria-hidden="true"><strike>24,000 원</strike></span>
+          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
+        </div>
+        <button class="recommendProduct__rightArrow" aria-label="추천상품 더보기 버튼"></button>
+
+      </section>
+      <section class="lineBanner">
+        <h2 class="a11yHidden">서브 라인 배너</h2>
+        <figure class="mainBanner__imageBox">
+          <img class="mainBanner__image" src="/" alt="메인 광고배너 이미지" srcset="/"></img>
+            <figcaption class="a11yHidden">더 풍성해진 10월 퍼플위크 이벤트 진행&#44; 적립률 올라가고 3종 쿠폰팩 증정</figcaption>
+          
+        </figure>
+      </section>
+      <section class="recommendProduct">
+        <h2 class="recommendProduct__title" aria-label="좋은 가격 상품">놓치면 후회할 가격</h2>
+        <div class="recommendProduct__product" aria-label="상품 1">
+          <figure class="recommendProduct__image"><img src="/" alt="풀무원 탱탱쫄면 4개입 이미지" /></figure>
+          <a href="/" aria-label="풀무원 탱탱쫄면 4개입">[풀무원] 탱탱쫄면 (4개입)</a>
+          <span aria-label="가격 4980 원">4,980 원</span>
+          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
+        </div>
+        <div class="recommendProduct__product" aria-label="상품 2">
+          <figure class="recommendProduct__image"><img src="/" alt="온더바디 죠르디 시카 자석 선쿠션 이미지" /></figure>
+          <a href="/" aria-label="온더바디 죠르디 시카 자석 선쿠션">[온더바디] 죠르디 시카 자석 선쿠션</a>
+          <span aria-label="가격 32500 원">32,500 원</span>
+          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
+        </div>
+        <div class="recommendProduct__product" aria-label="상품 3">
+          <figure class="recommendProduct__image"><img src="/" alt="유기농 밀키퀀 현미 이미지" /></figure>
+          <a href="/" aria-label="유기농 밀키퀀 현미 4키로그램">유기농 밀키퀀 현미 4kg</a>
+          <span aria-label="가격 4980 원">4,980 원</span>
+          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
+        </div>
+        <div class="recommendProduct__product" aria-label="상품 4">
+          <figure class="recommendProduct__image"><img src="/" alt="프로쉬 베이비 세탁세 이미지" /></figure>
+          <a href="/" aria-label="프로쉬 베이비 세탁세">[프로쉬] 베이비 세탁세</a>
+          <span aria-label="세일 24%">24%</span>
+          <span aria-label="가격 18900 원">189,000 원</span>
+          <span aria-hidden="true"><strike>24,000 원</strike></span>
+          <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
+        </div>
+        <button class="recommendProduct__rightArrow" aria-label="추천상품 더보기 버튼"></button>
+
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_top">
+        <div class="left_right">
+          <div class="customer service">
+            <h3>고객행복센터</h3>
+
+            <!-- 기타 문의 -->
+            <dl>
+              <dt><a href="/">전화 문의</a></dt>
+              <dd>1644-1107</dd>
+              <dd>월~토요일 오전 7시 ~ 오후 6시</dd>
+
+              <dt>카카오톡 문의</dt>
+              <dd></dd>
+              <dd></dd>
+
+              <dt>1:1 문의</dt>
+              <dd></dd>
+              <dd></dd>
+
+              <dt>대량주문 문의</dt>
+              <dd></dd>
+              <dd></dd>
+            </dl>
+            <!-- </dl> -->
+
+            <!-- 이메일 문의 -->
+            <address>
+              <!-- mailto -->
+              <p>비회원 문의 :<span>이메일</span></p>
+              <p>비회원 문의 :<span>이메일</span></p>
+            </address>
+          </div>
+          <div class="about">
+            <ul>
+              <li><a href="/">칼리소개</a></li>
+              <li><a href="/">칼리소개영상</a></li>
+              <li><a href="/">인재채용</a></li>
+              <li><a href="/">이용약관</a></li>
+              <li><a href="/">개인정보처리방침</a></li>
+              <li><a href="/">이용안내</a></li>
+            </ul>
+            <address>
+              <span>(주)멋쟁이사자처럼</span>
+              <span>대표이사 이두희</span>
+              <span>서울특별시 종로구 종로3길 17 D타워, 16-17층</span>
+              <span>사업자 등록번호 : 264-88-01106</span>
+              <span>통신판매업 신고 : 2019 - 서울강남 - 00774</span>
+              <span
+                >연락처 : <a href="tel:+821012345678">010-1234-5679</a></span
+              >
+              <span
+                >문의
+                <a href="mailto:contact@likelion.net"
+                  >contact@likelion.net</a
+                ></span
+              >
+            </address>
+
+            <ul class="sns">
+              <li><a href="/"></a></li>
+              <li><a href="/"></a></li>
+              <li><a href="/"></a></li>
+              <li><a href="/"></a></li>
+              <li><a href="/"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_company">
+          <ul>
+            <li><a href="/"></a></li>
+            <li><a href="/"></a></li>
+            <li><a href="/"></a></li>
+            <li><a href="/"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span></span>
+        <span></span>
+        <small></small>
+      </div>
+    </footer>
+  </body>
+</html>
