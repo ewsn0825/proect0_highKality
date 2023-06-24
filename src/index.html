@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>인덱스 페이지</title>
+  <title>마켓칼리</title>
   <link rel="stylesheet" as="style" crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
   <link rel="stylesheet" href="./style/index.css" />
@@ -13,14 +13,14 @@
 
 <body>
 
-  
-  <header class="bg-gray-500">
+
+  <header>
     <!-- 서치박스 영역 -->
-    <div>
+    <div class="searchContainer">
       <!-- logo css에서 백그라운드 이미지 처리-->
       <div class="logobox">
-        <h1>
-          <a href="/" class="logo">마켓칼리</a>
+        <h1 aria-hidden="true">
+          <a href="/" class="logo" >마켓칼리</a>
         </h1>
         <!-- N 이미지 처리 해주어야함 -->
         <span>
@@ -33,7 +33,7 @@
       <form action="/" class="searchForm" method="post">
 
         <label for="search">검색어</label>
-        <input type="search" id="search" class="searchForm__input" required placeholder="검색어를 입력해주세요."/>
+        <input type="search" id="search" class="searchForm__input" required placeholder="검색어를 입력해주세요." />
         <button><img src="주소" alt="검색" /></button>
 
       </form>
@@ -47,18 +47,18 @@
     </div>
 
     <!-- 네비게이션 영역 -->
-    <nav>
+    <nav class="nav" role="navigation">
       <!-- 햄버거 버튼 카테고리 -->
-      <button></button>
-      <ul>
+      <button>카테고리</button>
+      <ul class="nav__list">
         <li><a href="/">신상품</a></li>
         <li><a href="/">베스트</a></li>
         <li><a href="/">알뜰쇼핑</a></li>
         <li><a href="/">특가/혜택</a></li>
       </ul>
 
-      <a href="/">
-        <span>샛별&#183;낯 </span>배송안내
+      <a href="/" >
+        <span class="bg">샛별&#183;낯 </span>배송안내
       </a>
     </nav>
 
@@ -85,7 +85,7 @@
 
     </div>
   </header>
-  <main class="bg-gray-600">
+  <main>
     <section>
 
     </section>
@@ -101,7 +101,7 @@
         <div class="customer service">
 
           <h3>고객행복센터</h3>
-            
+
           <!-- 기타 문의 -->
           <dl>
             <dt><a href="/">전화 문의</a></dt>
@@ -111,11 +111,11 @@
             <dt>카카오톡 문의</dt>
             <dd></dd>
             <dd></dd>
-            
+
             <dt>1:1 문의</dt>
             <dd></dd>
             <dd></dd>
-            
+
             <dt>대량주문 문의</dt>
             <dd></dd>
             <dd></dd>
@@ -125,7 +125,7 @@
           <!-- 이메일 문의 -->
           <address>
             <!-- mailto -->
-            <p class="bg-gray-500">비회원 문의 :<span>이메일</span></p>
+            <p>비회원 문의 :<span>이메일</span></p>
             <p>비회원 문의 :<span>이메일</span></p>
           </address>
 
@@ -160,10 +160,16 @@
       </div>
       <div class="footerCompany">
         <ul class="footer">
-          <li><a href="/"></a></li>
-          <li><a href="/"></a></li>
-          <li><a href="/"></a></li>
-          <li><a href="/"></a></li>
+          <li>
+            <a href="/" class="icon">
+              <span>[인증범위] 마켓칼리 쇼핑몰 서비스 개발 운영 <br />
+              (심사받지 않은 물리적 인프라 제외) <br />
+            [유효기간] 2022.01.19 - 2025.01.18</span>
+            </a>
+          </li>
+          <li><a href="/" class="icon"></a></li>
+          <li><a href="/" class="icon"></a></li>
+          <li><a href="/" class="icon"></a></li>
         </ul>
       </div>
     </div>

@@ -4,10 +4,34 @@
 
 header{
   @include flexbox($direction: column);
+  color: $content;
 
 }
+h1{
+  @include a11yHidden;
+}
+.searchContainer{
+  @include flexbox;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  // flex-grow: 1;
+}
+
+.nav{
+  @include flexbox($justify:space-between);
+  @include paddingY(20px);
+  
+  &__list{
+    
+    font-weight: 500;
+    width: 500px;
+    @include flexbox($justify:space-around);
+  }
+}
+
 .headerBanner{
 
+  position: relative;
   @include paddingPct(20);
   
   background: $primary;
@@ -29,5 +53,9 @@ header{
 .memberOnly{
  
   @include flexbox($justify:flex-end);
+  position: absolute;
+  top: 50px;
+  right: 0;
+  // top: 50%;
 
 }

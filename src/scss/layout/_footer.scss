@@ -2,30 +2,48 @@
 @use "../utils" as *;
 
 
-footer{
+footer {
   border-top: 1px solid $gray-100;
+  @include flexbox($direction:column);
 }
 
-.footerTop{
-  width: 1050px;
-  @include autoMargin;
-  
+.footerTop {
+  width: 1000px;
+  @include paddingPct(15);
+
+
+
 }
 
-.footerBottom{
+.footerCompany {
+  border-top: 1px solid $gray-100;
+
+  .icon {
+
+    display: block;
+    background: url("/src/images/logo_isms.png");
+    width: 50px;
+    height: 50px;
+
+
+  }
+}
+
+//카피라이트 영역
+.footerBottom {
   background: $gray-50;
   font-size: rem(10px);
   color: $gray-400;
 
   @include paddingY(25px);
-  @include flexbox($direction:column, $justify:center, $items:center);
-  
-  span{
+  @include flexbox($direction: column, $justify: center, $items: center);
+
+  span {
     // display: block;
     @include paddingY(3px);
   }
 
-  small{
+  small {
     @include paddingY(10px);
   }
 }

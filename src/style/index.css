@@ -372,9 +372,47 @@ header {
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: stretch;
+  color: #001433;
+}
+
+h1 {
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.searchContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.nav__list {
+  font-weight: 500;
+  width: 500px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
 }
 
 .headerBanner {
+  position: relative;
   padding-left: 20%;
   padding-right: 20%;
   background: #5F0080;
@@ -391,16 +429,33 @@ header {
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: stretch;
+  position: absolute;
+  top: 50px;
+  right: 0;
 }
 
 footer {
   border-top: 1px solid #E1E1E1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 
 .footerTop {
-  width: 1050px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1000px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.footerCompany {
+  border-top: 1px solid #E1E1E1;
+}
+.footerCompany .icon {
+  display: block;
+  background: url("/src/images/logo_isms.png");
+  width: 50px;
+  height: 50px;
 }
 
 .footerBottom {
