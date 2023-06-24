@@ -8,8 +8,8 @@ header{
 }
 .headerBanner{
 
-  padding-left: 20%;
-  padding-right: 20%;
+  @include paddingPct(20);
+  
   background: $primary;
   color: $white;
   // position: fixed;

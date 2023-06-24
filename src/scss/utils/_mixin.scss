@@ -60,6 +60,14 @@
   padding-bottom: rem($spacing);
 }
 
+@mixin paddingPct($spacing){
+  
+  $pct: math.div($spacing,100);
+  
+  padding-left: math.percentage($pct);
+  padding-right: math.percentage($pct);
+}
+
 // 마진 믹스인
 
 @mixin margin($spacing){
