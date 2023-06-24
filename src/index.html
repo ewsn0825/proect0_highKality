@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>인덱스 페이지</title>
-  <!-- <link rel="stylesheet" as="style" crossorigin
+  <link rel="stylesheet" as="style" crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
-  <link rel="stylesheet" href="/style/index.css" /> -->
+  <link rel="stylesheet" href="/style/index.css" />
 </head>
 
 <body>
@@ -15,7 +15,7 @@
   
   <header>
     <!-- 서치박스 영역 -->
-    <div>
+    <div class="">
       <!-- logo css에서 백그라운드 이미지 처리-->
       <div class="logobox">
         <h1>
@@ -29,16 +29,16 @@
         </span>
       </div>
       <!-- 검색 영역 -->
-      <form action="/" method="post">
+      <form action="/" class="searchForm" method="post">
 
-        <label for="search__input"></label>
-        <input type="search" id="search__input" />
+        <label for="search">검색어</label>
+        <input type="search" id="search" class="searchForm__input" required placeholder="검색어를 입력해주세요."/>
         <button><img src="주소" alt="검색" /></button>
 
       </form>
 
       <!-- 아이콘 영역 -->
-      <ul>
+      <ul class="memberIcon">
         <li><a href="/" aria-label="배송지 설정"></a></li>
         <li><a href="/" aria-label="찜하기"></a></li>
         <li><a href="/" aria-label="장바구니"></a></li>
@@ -64,10 +64,6 @@
     <!-- 회원가입 영역 -->
     <ul class="memberOnly">
       <li>
-        <a href="/">로그인 </a>
-      </li>
-      <li>
-        <span class="divider" aria-hidden="true">ㅣ</span>
         <a href="/">회원가입</a>
       </li>
       <li>
@@ -82,7 +78,11 @@
         <span></span>
       </li>
     </ul>
+    <div class="headerBanner">
+      <a class="headerBanner__link" href="/">지금 가입하고 인기상품 <b>100원</b>에 받아가세요!</a>
+      <button type="button" class="headerBanner__button"></button>
 
+    </div>
   </header>
   <main>
     <section>
@@ -95,7 +95,7 @@
 
   <footer>
 
-    <div class="footer_top">
+    <div class="footerTop">
       <div class="left_right">
         <div class="customer service">
 
@@ -167,10 +167,10 @@
       </div>
     </div>
 
-    <div class="footer__bottom">
-      <span></span>
-      <span></span>
-      <small></small>
+    <div class="footerBottom">
+      <span>마켓컬리에서 판매되는 상품 중에는 마켓컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.</span>
+      <span>마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.</span>
+      <small>&copy; KURLY CORP. ALL RIGHTS RESERVED</small>
     </div>
   </footer>
 </body>
