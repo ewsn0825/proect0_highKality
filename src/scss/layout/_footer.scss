@@ -1,1 +1,31 @@
 // footer.scss
+@use "../utils" as *;
+
+
+footer{
+  border-top: 1px solid $gray-100;
+}
+
+.footerTop{
+  width: 1050px;
+  @include autoMargin;
+  
+}
+
+.footerBottom{
+  background: $gray-50;
+  font-size: rem(10px);
+  color: $gray-400;
+
+  @include paddingY(25px);
+  @include flexbox($direction:column, $justify:center, $items:center);
+  
+  span{
+    // display: block;
+    @include paddingY(3px);
+  }
+
+  small{
+    @include paddingY(10px);
+  }
+}

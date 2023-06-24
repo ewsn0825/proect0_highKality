@@ -1,1 +1,33 @@
 // header.scss
+@use "../utils" as *;
+
+
+header{
+  @include flexbox($direction: column);
+
+}
+.headerBanner{
+
+  padding-left: 20%;
+  padding-right: 20%;
+  background: $primary;
+  color: $white;
+  // position: fixed;
+  
+  text-align: center;
+
+  order: -1;
+
+
+  &__link{
+    display: block;
+  }
+}
+
+//멤버 서비스
+
+.memberOnly{
+ 
+  @include flexbox($justify:flex-end);
+
+}
