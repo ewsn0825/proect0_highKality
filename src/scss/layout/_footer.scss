@@ -1,21 +1,52 @@
 // footer.scss
 @use "../utils" as *;
+@use "../components" as *;
 
 
 footer {
   color: $content;
   border-top: 1px solid $gray-100;
+
+  // width: 1920px;
+
   // @include paddingPct(10);
-  // @include flexbox($direction:column);
+  // @include flexbox($direction:column,$items:center);
 }
 
 .footerTop {
-  // margin: 0;
-  // width: 1000px;
-  @include paddingPct(15);
+  // width: 1050px;
+  @include flexbox($direction: column, $justify: space-between);
+  // padding: 28px 0px 32px 0px;
+  @include paddingPct(20);
 
 
 }
+
+.footerInfo {
+  @include flexbox($justify: space-between);
+  padding: 28px 0px 32px 0px;
+}
+
+.customerService {
+  @include flexbox($direction: column, $items: flex-start);
+  gap: 16px;
+}
+
+.about {
+  // width: 55%;
+  @include flexbox($direction: column, $items: flex-start);
+  gap: 28px;
+
+  &__nav {
+    @include flexbox($justify: space-between);
+    gap: 10px;
+  }
+
+  &__info {
+    font-size: 10px;
+  }
+}
+
 
 //컴퍼니 영역
 
@@ -25,78 +56,79 @@ footer {
 }
 
 .companyWrap {
-  @include flexbox($justify: space-between);
-  column-gap: 10px;
-  // margin: 20px 0;
+  @include flexbox($justify: space-between, $items: flex-start);
+
+  // width: 1050px;
+  padding: 24px 0px 32px 0px;
+  font-size: rem(10px);
+  line-height: 16px;
+
+  gap: 24px;
 }
 
 .company__list {
-  // width: 100px;
-  @include flexbox;
-  font-size: rem(10px);
-  line-height: 18px;
-  // display: flow-root;
-}
+  @include flexbox($justify: space-between, $items: flex-start);
 
-.companySummary{
-  // display: block;
-  // float: right;
-  line-height: 18px;
 }
 
 .isms {
+  @include flexbox($items: flex-start);
 
-  // width: 25%;
-  @include flexbox;
-  // @include flexbox();
+  gap: 8px;
+
   &::before {
     content: "";
     display: block;
     background: url("../../images/logo_isms.png") no-repeat;
     width: 35px;
     height: 35px;
-    // float: left;
-    // position: absolute;
+    flex-shrink: 0;
+
   }
 
 }
 
 .privacy {
-  @include flexbox;
+  @include flexbox($items: flex-start);
+  gap: 8px;
+
   &::before {
     content: "";
     display: block;
     background: url("../../images/logo_privacy.png") no-repeat;
     width: 35px;
     height: 35px;
-    // position: absolute;
+    flex-shrink: 0;
   }
 
 }
 
 .woori {
-  @include flexbox;
-  
+  @include flexbox($items: flex-start);
+  gap: 8px;
+
   &::before {
     content: "";
     display: block;
     background: url("../../images/logo_wooriBank.png") no-repeat;
     width: 35px;
     height: 35px;
-    
+    flex-shrink: 0;
   }
 
 }
 
 .toss {
-  @include flexbox;
+  @include flexbox($items: flex-start);
+  gap: 8px;
+
   &::before {
     content: "";
     display: block;
     background: url("../../images/logo_tosspayments.png") no-repeat;
     width: 105px;
     height: 35px;
-    padding-right: 100px;
+    flex-shrink: 0;
   }
 
 }
@@ -111,11 +143,12 @@ footer {
   @include flexbox($direction: column, $justify: center, $items: center);
 
   span {
-    // display: block;
-    @include paddingY(3px);
+    line-height: 180%;
+    // @include paddingY(3px);
   }
 
   small {
+    line-height: 160%;
     @include paddingY(10px);
   }
 }

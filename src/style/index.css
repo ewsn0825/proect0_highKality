@@ -455,9 +455,10 @@ legend {
 header {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: stretch;
-  color: #001433;
+  color: #333333;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
 }
 
 .divider {
@@ -470,8 +471,12 @@ header {
 }
 
 .headerContainer {
-  padding-left: 15%;
-  padding-right: 15%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-left: 20%;
+  padding-right: 20%;
   position: relative;
 }
 
@@ -487,11 +492,20 @@ header {
 .logoContainer {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  column-gap: 10px;
+  gap: 12px;
+}
+
+.switchContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
   font-weight: bold;
   font-size: 18px;
+  gap: 12px;
+  position: relative;
 }
 
 .market__link {
@@ -503,12 +517,13 @@ header {
 }
 .beauty__link::after {
   content: "";
-  display: inline-block;
+  display: block;
   background: url("../../images/Icon/new.svg");
   width: 7px;
   height: 7px;
-  margin-left: 6px;
-  transform: translateY(-20px);
+  top: -5px;
+  right: -15px;
+  position: absolute;
 }
 
 .formContainer {
@@ -517,6 +532,12 @@ header {
   margin-left: 20px;
 }
 
+.searchForm {
+  width: 500px;
+  border: 1.5px solid #5F0080;
+  border-radius: 3px;
+  padding: 12px 20px;
+}
 .searchForm label {
   overflow: hidden;
   position: absolute !important;
@@ -527,9 +548,8 @@ header {
   margin: -1px;
 }
 .searchForm__input {
-  padding: 15px 140px 15px 15px;
-  border: 1.5px solid #5F0080;
-  border-radius: 3px;
+  border: 0;
+  width: 300px;
 }
 
 .memberIcon {
@@ -544,13 +564,13 @@ header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
 .nav__list {
   font-weight: 600;
-  width: 500px;
+  width: 650px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -561,6 +581,7 @@ header {
   border: 0;
   background: #ffffff;
   font-weight: bold;
+  transform: translateY(1px);
 }
 .nav__button::before {
   content: "";
@@ -578,7 +599,6 @@ header {
   border: 1px solid #A6A6A6;
   padding: 6px 8px;
   border-radius: 20px;
-  transform: translateY(-5px);
 }
 
 .link__color {
@@ -590,8 +610,8 @@ header {
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 20%;
+  padding-right: 20%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   background: #5F0080;
@@ -612,7 +632,7 @@ header {
   align-items: center;
   position: absolute;
   top: 5%;
-  right: 15%;
+  right: 20%;
 }
 .memberOnly__list {
   font-weight: 600;
@@ -634,13 +654,51 @@ header {
 }
 
 footer {
-  color: #001433;
+  color: #333333;
   border-top: 1px solid #E1E1E1;
 }
 
 .footerTop {
-  padding-left: 15%;
-  padding-right: 15%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.footerInfo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 28px 0px 32px 0px;
+}
+
+.customerService {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.about {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 28px;
+}
+.about__nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+}
+.about__info {
+  font-size: 10px;
 }
 
 .footerCompany {
@@ -651,28 +709,26 @@ footer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: stretch;
-  column-gap: 10px;
+  align-items: flex-start;
+  padding: 24px 0px 32px 0px;
+  font-size: 0.625rem;
+  line-height: 16px;
+  gap: 24px;
 }
 
 .company__list {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  font-size: 0.625rem;
-  line-height: 18px;
-}
-
-.companySummary {
-  line-height: 18px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .isms {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: flex-start;
+  gap: 8px;
 }
 .isms::before {
   content: "";
@@ -680,13 +736,15 @@ footer {
   background: url("../../images/logo_isms.png") no-repeat;
   width: 35px;
   height: 35px;
+  flex-shrink: 0;
 }
 
 .privacy {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: flex-start;
+  gap: 8px;
 }
 .privacy::before {
   content: "";
@@ -694,13 +752,15 @@ footer {
   background: url("../../images/logo_privacy.png") no-repeat;
   width: 35px;
   height: 35px;
+  flex-shrink: 0;
 }
 
 .woori {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: flex-start;
+  gap: 8px;
 }
 .woori::before {
   content: "";
@@ -708,13 +768,15 @@ footer {
   background: url("../../images/logo_wooriBank.png") no-repeat;
   width: 35px;
   height: 35px;
+  flex-shrink: 0;
 }
 
 .toss {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: flex-start;
+  gap: 8px;
 }
 .toss::before {
   content: "";
@@ -722,7 +784,7 @@ footer {
   background: url("../../images/logo_tosspayments.png") no-repeat;
   width: 105px;
   height: 35px;
-  padding-right: 100px;
+  flex-shrink: 0;
 }
 
 .footerBottom {
@@ -737,10 +799,10 @@ footer {
   align-items: center;
 }
 .footerBottom span {
-  padding-top: 0.1875rem;
-  padding-bottom: 0.1875rem;
+  line-height: 180%;
 }
 .footerBottom small {
+  line-height: 160%;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 }
