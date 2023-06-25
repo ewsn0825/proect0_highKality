@@ -8,6 +8,14 @@ header{
   @include flexbox($direction: column);
   color: $content;
 }
+.divider{
+  color:$gray-100;
+  font-size: 12px;
+}
+
+.bold{
+  font-weight: bold
+}
 
 .headerContainer{
   @include paddingPct(15);
@@ -21,33 +29,63 @@ header{
   // flex-grow: 1;
 }
 
+//로고 영역
+
 .logoContainer{
   @include flexbox($justify:space-between,$items:center);
   column-gap: 10px;
   font-weight: bold;
   font-size: 18px
+  
 }
 
+.market__link{
+  color: $primary;
+}
 
+.beauty__link{
+  color: $gray-400;
+  &::after{
+    content: "";
+    display: inline-block;
+    background: url("../../images/Icon/new.svg");
+    width: 7px;
+    height: 7px;
+    margin-left: 6px;
+    transform: translateY(-20px);
+  }
+}
 
+//검색 폼 영역
+
+.formContainer{
+  position: relative;
+  flex-grow: 1;
+  margin-left: 20px;
+}
 
 .searchForm{
+
+  // @include flexbox;
+  // display: flow-root;
 
   label{
     @include a11yHidden;
   }
 
   &__input{
+    // position: relative;
+    // display: block;
 
-    width: 100%;
-    @include padding(15px);
-    border: 1px solid $primary;
+    // width: 100%;
+    padding: 15px 140px 15px 15px;
+    border: 1.5px solid $primary;
     border-radius: 3px;
   }
 }
 
 .memberIcon{
-  @include flexbox();
+  @include flexbox;
   column-gap: 20px;
   // flex-grow: 1;
   // flex-basis: 0;
@@ -66,18 +104,41 @@ header{
     @include flexbox($justify:space-around);
   }
 }
+.nav__button{
+  border: 0;
+  background: $white;
+  font-weight: bold;
+  &::before{
+    content: "";
+    display: inline-block;
+    background: url("../../images/Icon/Hamburger_black.png") no-repeat;
+
+    width: 16px;
+    height: 14px;
+
+    margin-right: 10px;
+  }
+}
+.nav__link{
+  display: block;
+  font-size: 12px;
+  color: $gray-300;
+  border: 1px solid $gray-300;
+  padding: 6px 8px;
+  border-radius: 20px;
+  transform: translateY(-5px);
+}
+.link__color{
+  color: $primary;
+}
 
 // 헤더 배너 영역
 .headerBanner{
+  @include flexbox($justify:flex-end,$items:center);
 
-  display: inline-flex;
-  flex-flow: row wrap;
-  // justify-content: space-between;
-  align-items: center;
-  // font-weight: 400;
-  // position: relative;
+
   @include paddingPct(15);
-  @include paddingY(10px);
+  @include paddingY(8px);
   
   background: $primary;
   color: $white;
@@ -89,24 +150,51 @@ header{
   order: -1;
 
   &__link{
-    padding: 0;
+
+    display: block;
+    font-size: rem(14px);
+
+    // @include paddingX(100%);
+    // padding: 0;
     text-align: center;
     
-    display: inline-block;
-    // flex-grow: 1;
+    // display: inline-block;
+    flex-grow: 1;
   }
 }
 
 //멤버 서비스 (회원가입 영역)
 .memberOnly{
  
-  @include flexbox($justify:flex-end);
+  @include flexbox($justify:space-evenly,$items:center);
   position: absolute;
   // top: 50px;
-  top:0;
-  right: 15%;
-  // top: 50%;
+  
 
+  top:5%;
+  right: 15%;
+  
+  &__list{
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+}
+.member__signUp{
+  color: $primary;
+}
+
+.member__cusCenter{
+  &::after{
+    content: "";
+    display: inline-block;
+    
+    background: url("../../images/Icon/down.svg");
+    width: 8px;
+    height: 6px;
+    transform: translateY(-3px);
+    margin-left: 5px;
+  }
 }
 
 

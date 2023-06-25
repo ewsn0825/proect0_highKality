@@ -369,51 +369,57 @@ legend {
 }
 
 .headerBanner__button {
+  float: right;
   transform: translateY(1px);
 }
 
+.search__button {
+  position: absolute;
+  top: 8px;
+  right: 100px;
+}
+
 .searchIcon {
-  background: url("../../images/Icon/Search.png") no-repeat;
+  background: url("../../images/Icon/Search.svg") no-repeat;
   width: 40px;
   height: 40px;
   border: 0;
 }
 
 .cancelIcon {
-  background: url("../../images/Icon/Cancel.png") no-repeat;
+  background: url("../../images/Icon/Cancel.svg") no-repeat;
   width: 30px;
   height: 30px;
   border: 0;
-  float: right;
 }
 
 .heartIcon {
   display: block;
-  background: url("../../images/Icon/Heart.png") no-repeat;
+  background: url("../../images/Icon/Heart.svg") no-repeat;
   width: 32px;
-  height: 30px;
+  height: 31px;
   border: 0;
 }
 
 .locationIcon {
   display: block;
-  background: url("../../images/Icon/Location.png") no-repeat;
+  background: url("../../images/Icon/Location.svg") no-repeat;
   width: 32px;
-  height: 30px;
+  height: 31px;
   border: 0;
 }
 
 .cartIcon {
   display: block;
-  background: url("../../images/Icon/Cart-black.png") no-repeat;
+  background: url("../../images/Icon/Cart.svg") no-repeat;
   width: 32px;
-  height: 30px;
+  height: 31px;
   border: 0;
 }
 
 .logoKarly {
   display: block;
-  background: url("../../images/logo.png") no-repeat;
+  background: url("../../images/logo2.svg") no-repeat;
   width: 80px;
   height: 45px;
 }
@@ -454,6 +460,15 @@ header {
   color: #001433;
 }
 
+.divider {
+  color: #E1E1E1;
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .headerContainer {
   padding-left: 15%;
   padding-right: 15%;
@@ -479,6 +494,29 @@ header {
   font-size: 18px;
 }
 
+.market__link {
+  color: #5F0080;
+}
+
+.beauty__link {
+  color: #898989;
+}
+.beauty__link::after {
+  content: "";
+  display: inline-block;
+  background: url("../../images/Icon/new.svg");
+  width: 7px;
+  height: 7px;
+  margin-left: 6px;
+  transform: translateY(-20px);
+}
+
+.formContainer {
+  position: relative;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
 .searchForm label {
   overflow: hidden;
   position: absolute !important;
@@ -489,12 +527,8 @@ header {
   margin: -1px;
 }
 .searchForm__input {
-  width: 100%;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  padding-top: 0.9375rem;
-  padding-bottom: 0.9375rem;
-  border: 1px solid #5F0080;
+  padding: 15px 140px 15px 15px;
+  border: 1.5px solid #5F0080;
   border-radius: 3px;
 }
 
@@ -523,32 +557,80 @@ header {
   align-items: stretch;
 }
 
+.nav__button {
+  border: 0;
+  background: #ffffff;
+  font-weight: bold;
+}
+.nav__button::before {
+  content: "";
+  display: inline-block;
+  background: url("../../images/Icon/Hamburger_black.png") no-repeat;
+  width: 16px;
+  height: 14px;
+  margin-right: 10px;
+}
+
+.nav__link {
+  display: block;
+  font-size: 12px;
+  color: #A6A6A6;
+  border: 1px solid #A6A6A6;
+  padding: 6px 8px;
+  border-radius: 20px;
+  transform: translateY(-5px);
+}
+
+.link__color {
+  color: #5F0080;
+}
+
 .headerBanner {
-  display: inline-flex;
-  flex-flow: row wrap;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
   align-items: center;
   padding-left: 15%;
   padding-right: 15%;
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   background: #5F0080;
   color: #ffffff;
   order: -1;
 }
 .headerBanner__link {
-  padding: 0;
+  display: block;
+  font-size: 0.875rem;
   text-align: center;
-  display: inline-block;
+  flex-grow: 1;
 }
 
 .memberOnly {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
-  align-items: stretch;
+  justify-content: space-evenly;
+  align-items: center;
   position: absolute;
-  top: 0;
+  top: 5%;
   right: 15%;
+}
+.memberOnly__list {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.member__signUp {
+  color: #5F0080;
+}
+
+.member__cusCenter::after {
+  content: "";
+  display: inline-block;
+  background: url("../../images/Icon/down.svg");
+  width: 8px;
+  height: 6px;
+  transform: translateY(-3px);
+  margin-left: 5px;
 }
 
 footer {

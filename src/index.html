@@ -15,21 +15,6 @@
 
 
   <header>
-<<<<<<< HEAD
-    <!-- 서치박스 영역 -->
-    <div class="searchContainer">
-      <!-- logo css에서 백그라운드 이미지 처리-->
-      <div class="logobox">
-        <h1 aria-hidden="true a11y">
-          <a href="/" class="logo" >마켓칼리</a>
-        </h1>
-        <!-- N 이미지 처리 해주어야함 -->
-        <span>
-          <a href="/">마켓칼리</a>
-          <span>|</span>
-          <a href="/">뷰티칼리</a>
-        </span>
-=======
     <div class="headerContainer">
       <!-- 서치박스 영역 -->
       <div class="searchContainer">
@@ -46,13 +31,16 @@
 
         </div>
         <!-- 검색 영역 -->
-        <form action="/" class="searchForm" method="post">
 
-          <label for="search">검색어</label>
-          <input type="search" id="search" class="searchForm__input" required placeholder="검색어를 입력해주세요." />
-          <button class="searchIcon"></button>
+        <div class="formContainer">
+          <form action="/" class="searchForm" method="post">
+            <label for="search">검색어</label>
+            <input type="search" id="search" class="searchForm__input" required placeholder="검색어를 입력해주세요." />
+            <button class="searchIcon search__button"></button>
+          </form>
+        </div>
 
-        </form>
+
 
         <!-- 아이콘 영역 -->
         <ul class="memberIcon">
@@ -60,7 +48,6 @@
           <li><a href="/" aria-label="찜하기" class="heartIcon"></a></li>
           <li><a href="/" aria-label="장바구니" class="cartIcon"></a></li>
         </ul>
->>>>>>> e821823c66c27767d92fe8f564b12504037fb0a1
       </div>
 
       <!-- 네비게이션 영역 -->
@@ -74,26 +61,25 @@
           <li><a href="/">특가/혜택</a></li>
         </ul>
 
-        <a href="/">
-          <span class="">샛별&#183;낮 </span>배송안내
+        <a href="/" class="nav__link">
+          <span class="link__color">샛별&#183;낮 </span>배송안내
         </a>
       </nav>
 
       <!-- 회원가입 영역 -->
       <ul class="memberOnly">
-        <li>
-          <a href="/">회원가입</a>
+        <li class="memberOnly__list">
+          <!-- <span class="divider" aria-hidden="true">ㅣ</span> -->
+          <a href="/" class="member__signUp">회원가입</a>
         </li>
-        <li>
+        <li class="memberOnly__list">
           <span class="divider" aria-hidden="true">ㅣ</span>
-          <a href="/">로그인</a>
+          <a href="/" class="member__signIn">로그인</a>
         </li>
-        <li>
+        <li class="memberOnly__list">
           <span class="divider" aria-hidden="true">ㅣ</span>
-          <a href="/">고객센터</a>
+          <a href="/" class="member__cusCenter">고객센터</a>
 
-          <!-- 접어넣기 기호 -->
-          <span></span>
         </li>
       </ul>
 
@@ -101,7 +87,7 @@
 
 
     <div class="headerBanner">
-      <a class="headerBanner__link" href="/">지금 가입하고 인기상품 <strong>100원</strong>에 받아가세요!</a>
+      <a class="headerBanner__link" href="/">지금 가입하고 인기상품 <span class="bold">100원</span>에 받아가세요!</a>
       <button type="button" class="cancelIcon headerBanner__button"></button>
 
     </div>
