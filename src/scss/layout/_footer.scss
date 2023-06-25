@@ -17,18 +17,88 @@ footer {
 
 }
 
+//컴퍼니 영역
+
 .footerCompany {
   border-top: 1px solid $gray-100;
+  // position: relative;
 }
 
-.companyWrap{
-  @include flexbox($justify:space-between);
+.companyWrap {
+  @include flexbox($justify: space-between);
+  column-gap: 10px;
+  // margin: 20px 0;
 }
 
-.company__list{
+.company__list {
   // width: 100px;
   @include flexbox;
   font-size: rem(10px);
+  line-height: 18px;
+  // display: flow-root;
+}
+
+.companySummary{
+  // display: block;
+  // float: right;
+  line-height: 18px;
+}
+
+.isms {
+
+  // width: 25%;
+  @include flexbox;
+  // @include flexbox();
+  &::before {
+    content: "";
+    display: block;
+    background: url("../../images/logo_isms.png") no-repeat;
+    width: 35px;
+    height: 35px;
+    // float: left;
+    // position: absolute;
+  }
+
+}
+
+.privacy {
+  @include flexbox;
+  &::before {
+    content: "";
+    display: block;
+    background: url("../../images/logo_privacy.png") no-repeat;
+    width: 35px;
+    height: 35px;
+    // position: absolute;
+  }
+
+}
+
+.woori {
+  @include flexbox;
+  
+  &::before {
+    content: "";
+    display: block;
+    background: url("../../images/logo_wooriBank.png") no-repeat;
+    width: 35px;
+    height: 35px;
+    
+  }
+
+}
+
+.toss {
+  @include flexbox;
+  &::before {
+    content: "";
+    display: block;
+    background: url("../../images/logo_tosspayments.png") no-repeat;
+    width: 105px;
+    height: 35px;
+    padding-right: 100px;
+  }
+
 }
 
 //카피라이트 영역

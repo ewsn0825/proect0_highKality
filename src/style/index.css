@@ -652,6 +652,7 @@ footer {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: stretch;
+  column-gap: 10px;
 }
 
 .company__list {
@@ -660,6 +661,68 @@ footer {
   justify-content: flex-start;
   align-items: stretch;
   font-size: 0.625rem;
+  line-height: 18px;
+}
+
+.companySummary {
+  line-height: 18px;
+}
+
+.isms {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.isms::before {
+  content: "";
+  display: block;
+  background: url("../../images/logo_isms.png") no-repeat;
+  width: 35px;
+  height: 35px;
+}
+
+.privacy {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.privacy::before {
+  content: "";
+  display: block;
+  background: url("../../images/logo_privacy.png") no-repeat;
+  width: 35px;
+  height: 35px;
+}
+
+.woori {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.woori::before {
+  content: "";
+  display: block;
+  background: url("../../images/logo_wooriBank.png") no-repeat;
+  width: 35px;
+  height: 35px;
+}
+
+.toss {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.toss::before {
+  content: "";
+  display: block;
+  background: url("../../images/logo_tosspayments.png") no-repeat;
+  width: 105px;
+  height: 35px;
+  padding-right: 100px;
 }
 
 .footerBottom {
