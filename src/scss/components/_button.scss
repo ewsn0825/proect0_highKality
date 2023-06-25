@@ -1,23 +1,10 @@
 // button.scss
 .headerBanner__button{
-
-  
-  float: right;
+  // display: inline-block;
   transform: translateY(1px);
-
-
+  // float: right;
 }
 
-.search__button{
-  // display: block;
-  // padding: 0;
-  // float: right;
+.nav__button{
   
-  // display: inline;
-  position: absolute;
-
-  top:8px;
-  right: 100px;
-  // top: 100px;
-  // transform: translateY(500px);
 }

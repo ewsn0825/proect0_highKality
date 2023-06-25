@@ -1,38 +1,39 @@
 // 아이콘 이미지
 
 .searchIcon{
-  background: url("../../images/Icon/Search.svg") no-repeat;
+  background: url("../../images/Icon/Search.png") no-repeat;
   width: 40px;
   height: 40px;
   border: 0;
 }
 
 .cancelIcon{
-  background: url("../../images/Icon/Cancel.svg") no-repeat;
+  background: url("../../images/Icon/Cancel.png") no-repeat;
   width: 30px;
   height: 30px;
   border: 0;
-  // float: right;
+  float: right;
 }
 
 .heartIcon{
   display: block;
-  background: url("../../images/Icon/Heart.svg") no-repeat;
+  background: url("../../images/Icon/Heart.png") no-repeat;
   width: 32px;
-  height: 31px;
+  height: 30px;
   border: 0;
 }
 .locationIcon{
   display: block;
-  background: url("../../images/Icon/Location.svg") no-repeat;
+  background: url("../../images/Icon/Location.png") no-repeat;
   width: 32px;
-  height: 31px;
+  height: 30px;
   border: 0;
 }
 .cartIcon{
   display: block;
-  background: url("../../images/Icon/Cart.svg") no-repeat;
+  background: url("../../images/Icon/Cart-black.png") no-repeat;
   width: 32px;
-  height: 31px;
+  height: 30px;
   border: 0;
 }
+
