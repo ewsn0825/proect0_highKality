@@ -1,10 +1,19 @@
 // button.scss
-.headerBanner__button{
+@use "../utils" as *;
+
+.headerBanner__button {
   // display: inline-block;
   transform: translateY(1px);
   // float: right;
 }
 
-.nav__button{
+
+.inquiryButton {
+  background: white;
+  border: 1px solid $gray-200;
+  width: 140px;
+  height: 40px;
   
+  // float: left;
+  // padding: 10px 25px;
 }

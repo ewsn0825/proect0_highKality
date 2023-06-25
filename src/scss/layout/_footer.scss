@@ -4,13 +4,28 @@
 
 
 footer {
+  font-family: Pretendard;
   color: $content;
   border-top: 1px solid $gray-100;
 
-  // width: 1920px;
+  // width: 100%;
 
   // @include paddingPct(10);
   // @include flexbox($direction:column,$items:center);
+}
+
+.dividerCustomer {
+  color: $content;
+  font-size: 16px;
+}
+
+.dividerAbout {
+  color: $content;
+  font-size: 10px;
+}
+
+.a11y {
+  @include a11yHidden();
 }
 
 .footerTop {
@@ -27,10 +42,71 @@ footer {
   padding: 28px 0px 32px 0px;
 }
 
+//커스터머 서비스 컨테이너
 .customerService {
   @include flexbox($direction: column, $items: flex-start);
   gap: 16px;
 }
+
+.happyCenter {
+  font-size: 21.328px;
+  // font-family: Pretendard;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+
+
+.centerNumber {
+  font-size: 37.897px;
+  font-weight: 700;
+  // float: left;
+}
+
+.centerTime {
+  font-size: 16px;
+  font-weight: 600;
+  // float: right;
+
+}
+
+// .inquiryContainer{
+//   @include flexbox($direction:column);
+//   gap: 10px;
+// }
+
+.numberInquiry{
+  @include flexbox($items:center);
+  gap: 10px;
+}
+
+.kakaoInquiry{
+  @include flexbox($direction:row-reverse,$items:center);
+  gap: 10px;
+
+  line-height: 26px;
+  
+}
+
+.oneononeInquiry{
+  @include flexbox($direction:row-reverse,$items:center);
+  gap: 10px;
+  line-height: 26px;
+  
+}
+
+.bulkInquiry{
+  @include flexbox($direction:row-reverse,$items:center);
+  gap: 10px;
+  line-height: 26px;
+  
+}
+
+.nonMember {
+  font-size: 10px;
+}
+
+//어바웃 컨테이너
 
 .about {
   // width: 55%;
@@ -44,7 +120,19 @@ footer {
 
   &__info {
     font-size: 10px;
+    line-height: 18px;
+
   }
+}
+
+.primary {
+  color: $primary;
+  font-weight: bold;
+}
+
+.snsContainer {
+  @include flexbox;
+  gap: 20px;
 }
 
 

@@ -3,31 +3,34 @@
 @use "../components" as *;
 
 
-header{
-  
-  @include flexbox($direction: column,$justify:center);
+header {
+
+  // width: 1920px;
+  @include flexbox($direction: column, $justify: center);
   color: $content;
   box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.10);
+  font-family: Pretendard;
   // width: 1920px;
 
 }
-.divider{
-  color:$gray-100;
+
+.divider {
+  color: $gray-100;
   font-size: 12px;
 }
 
-.bold{
+.bold {
   font-weight: bold
 }
 
-.headerContainer{
-  @include flexbox($direction:column);
+.headerContainer {
+  @include flexbox($direction: column);
   @include paddingPct(20);
   position: relative;
 }
 
-.searchContainer{
-  @include flexbox($items:center,$justify:space-between);
+.searchContainer {
+  @include flexbox($items: center, $justify: space-between);
   padding-top: 40px;
   padding-bottom: 10px;
   // flex-grow: 1;
@@ -35,27 +38,29 @@ header{
 
 //로고 영역
 
-.logoContainer{
-  @include flexbox($items:center);
+.logoContainer {
+  @include flexbox($items: center);
   gap: 12px;
-  
-  
+
+
 }
-.switchContainer{
-  @include flexbox($items:center);
+
+.switchContainer {
+  @include flexbox($items: center);
   font-weight: bold;
   font-size: 18px;
   gap: 12px;
   position: relative;
 }
 
-.market__link{
+.market__link {
   color: $primary;
 }
 
-.beauty__link{
+.beauty__link {
   color: $gray-400;
-  &::after{
+
+  &::after {
     content: "";
     display: block;
     background: url("../../images/Icon/new.svg");
@@ -71,29 +76,32 @@ header{
 
 //검색 폼 영역
 
-.formContainer{
-  position: relative;
-  flex-grow: 1;
-  margin-left: 20px;
+.formContainer {
+  // position: relative;
+  // flex-grow: 1;
+  // margin-left: 20px;
 }
 
-.searchForm{
-  width: 500px;
+.searchForm {
+  width: 400px;
   border: 1.5px solid $primary;
   border-radius: 3px;
-  padding: 12px 20px;
-  // @include flexbox;
-  // display: flow-root;
-
-  label{
+  padding: 5px 5px;
+  @include flexbox($justify:space-between,$items:center);
+  position: absolute;
+  top: 35px;
+  right: 750px;
+  
+  label {
     @include a11yHidden;
   }
 
-  &__input{
+  &__input {
     border: 0;
+
+    width: 75%;
     
-    width: 300px;
-    // padding: 12px 20px;
+    padding: 10px 10px;
     // position: relative;
     // display: block;
 
@@ -104,35 +112,35 @@ header{
   }
 }
 
-.memberIcon{
+.memberIcon {
   @include flexbox;
-  column-gap: 20px;
+  column-gap: 25px;
   // flex-grow: 1;
   // flex-basis: 0;
 }
 
 
 // 네이게이션 영역
-.nav{
-  @include flexbox($justify:space-between,$items:center);
+.nav {
+  @include flexbox($justify: space-between, $items: center);
   @include paddingY(20px);
-  
-  &__list{
-    
+
+  &__list {
+
     font-weight: 600;
-    width: 650px;
-    // flex-grow: 1;
-    @include flexbox($justify:space-around);
-    // gap: 100px;
+    width: 700px;
+    @include flexbox($justify: space-around);
+   
   }
 }
-.nav__button{
+
+.nav__button {
   border: 0;
   background: $white;
   font-weight: bold;
   transform: translateY(1px);
 
-  &::before{
+  &::before {
     content: "";
     display: inline-block;
     background: url("../../images/Icon/Hamburger_black.png") no-repeat;
@@ -143,7 +151,8 @@ header{
     margin-right: 10px;
   }
 }
-.nav__link{
+
+.nav__link {
   display: block;
   font-size: 12px;
   color: $gray-300;
@@ -152,28 +161,29 @@ header{
   border-radius: 20px;
   // transform: translateY(-5px);
 }
-.link__color{
+
+.link__color {
   color: $primary;
 }
 
 // 헤더 배너 영역
-.headerBanner{
-  @include flexbox($justify:flex-end,$items:center);
+.headerBanner {
+  @include flexbox($justify: flex-end, $items: center);
 
 
   @include paddingPct(20);
   @include paddingY(8px);
-  
+
   background: $primary;
   color: $white;
   // position: fixed;
-  
+
   // text-align: center;
-  
+
   // @include flexbox;
   order: -1;
 
-  &__link{
+  &__link {
 
     display: block;
     font-size: rem(14px);
@@ -181,38 +191,39 @@ header{
     // @include paddingX(100%);
     // padding: 0;
     text-align: center;
-    
+
     // display: inline-block;
     flex-grow: 1;
   }
 }
 
 //멤버 서비스 (회원가입 영역)
-.memberOnly{
- 
-  @include flexbox($justify:space-evenly,$items:center);
+.memberOnly {
+
+  @include flexbox($justify: space-evenly, $items: center);
   position: absolute;
   // top: 50px;
-  
 
-  top:5%;
+
+  top: 5%;
   right: 20%;
-  
-  &__list{
+
+  &__list {
     font-weight: 600;
     font-size: 12px;
   }
 
 }
-.member__signUp{
+
+.member__signUp {
   color: $primary;
 }
 
-.member__cusCenter{
-  &::after{
+.member__cusCenter {
+  &::after {
     content: "";
     display: inline-block;
-    
+
     background: url("../../images/Icon/down.svg");
     width: 8px;
     height: 6px;
@@ -220,6 +231,3 @@ header{
     margin-left: 5px;
   }
 }
-
-
-
