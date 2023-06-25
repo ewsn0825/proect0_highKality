@@ -337,6 +337,7 @@ body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font: inherit;
   background-color: #fff;
+  overflow: scroll;
 }
 
 /* 유연한 미디어 */
@@ -367,6 +368,84 @@ legend {
   margin: -1px;
 }
 
+.headerBanner__button {
+  transform: translateY(1px);
+}
+
+.searchIcon {
+  background: url("../../images/Icon/Search.png") no-repeat;
+  width: 40px;
+  height: 40px;
+  border: 0;
+}
+
+.cancelIcon {
+  background: url("../../images/Icon/Cancel.png") no-repeat;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  float: right;
+}
+
+.heartIcon {
+  display: block;
+  background: url("../../images/Icon/Heart.png") no-repeat;
+  width: 32px;
+  height: 30px;
+  border: 0;
+}
+
+.locationIcon {
+  display: block;
+  background: url("../../images/Icon/Location.png") no-repeat;
+  width: 32px;
+  height: 30px;
+  border: 0;
+}
+
+.cartIcon {
+  display: block;
+  background: url("../../images/Icon/Cart-black.png") no-repeat;
+  width: 32px;
+  height: 30px;
+  border: 0;
+}
+
+.logoKarly {
+  display: block;
+  background: url("../../images/logo.png") no-repeat;
+  width: 80px;
+  height: 45px;
+}
+
+.logoIsms {
+  display: block;
+  background: url("../../images/logo_isms.png") no-repeat;
+  width: 35px;
+  height: 35px;
+}
+
+.logoPrivacy {
+  display: block;
+  background: url("../../images/logo_privacy.png") no-repeat;
+  width: 35px;
+  height: 35px;
+}
+
+.logoWoori {
+  display: block;
+  background: url("../../images/logo_wooriBank.png") no-repeat;
+  width: 35px;
+  height: 35px;
+}
+
+.logoToss {
+  display: block;
+  background: url("../../images/logo_tosspayments.png") no-repeat;
+  width: 105px;
+  height: 35px;
+}
+
 header {
   display: flex;
   flex-flow: column nowrap;
@@ -375,7 +454,32 @@ header {
   color: #001433;
 }
 
-h1 {
+.headerContainer {
+  padding-left: 15%;
+  padding-right: 15%;
+  position: relative;
+}
+
+.searchContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.logoContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.searchForm label {
   overflow: hidden;
   position: absolute !important;
   clip: rect(0, 0, 0, 0);
@@ -384,14 +488,22 @@ h1 {
   height: 1px;
   margin: -1px;
 }
+.searchForm__input {
+  width: 100%;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  border: 1px solid #5F0080;
+  border-radius: 3px;
+}
 
-.searchContainer {
+.memberIcon {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  padding-top: 40px;
-  padding-bottom: 10px;
+  column-gap: 20px;
 }
 
 .nav {
@@ -403,7 +515,7 @@ h1 {
   padding-bottom: 1.25rem;
 }
 .nav__list {
-  font-weight: 500;
+  font-weight: 600;
   width: 500px;
   display: flex;
   flex-flow: row nowrap;
@@ -412,16 +524,21 @@ h1 {
 }
 
 .headerBanner {
-  position: relative;
-  padding-left: 20%;
-  padding-right: 20%;
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
   background: #5F0080;
   color: #ffffff;
-  text-align: center;
   order: -1;
 }
 .headerBanner__link {
-  display: block;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
 }
 
 .memberOnly {
@@ -430,20 +547,16 @@ h1 {
   justify-content: flex-end;
   align-items: stretch;
   position: absolute;
-  top: 50px;
-  right: 0;
+  top: 0;
+  right: 15%;
 }
 
 footer {
+  color: #001433;
   border-top: 1px solid #E1E1E1;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
 }
 
 .footerTop {
-  width: 1000px;
   padding-left: 15%;
   padding-right: 15%;
 }
@@ -451,11 +564,20 @@ footer {
 .footerCompany {
   border-top: 1px solid #E1E1E1;
 }
-.footerCompany .icon {
-  display: block;
-  background: url("/src/images/logo_isms.png");
-  width: 50px;
-  height: 50px;
+
+.companyWrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.company__list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  font-size: 0.625rem;
 }
 
 .footerBottom {

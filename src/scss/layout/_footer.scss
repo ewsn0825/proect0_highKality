@@ -3,30 +3,32 @@
 
 
 footer {
+  color: $content;
   border-top: 1px solid $gray-100;
-  @include flexbox($direction:column);
+  // @include paddingPct(10);
+  // @include flexbox($direction:column);
 }
 
 .footerTop {
-  width: 1000px;
+  // margin: 0;
+  // width: 1000px;
   @include paddingPct(15);
-
 
 
 }
 
 .footerCompany {
   border-top: 1px solid $gray-100;
+}
 
-  .icon {
+.companyWrap{
+  @include flexbox($justify:space-between);
+}
 
-    display: block;
-    background: url("/src/images/logo_isms.png");
-    width: 50px;
-    height: 50px;
-
-
-  }
+.company__list{
+  // width: 100px;
+  @include flexbox;
+  font-size: rem(10px);
 }
 
 //카피라이트 영역

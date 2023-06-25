@@ -1,11 +1,9 @@
 {
   "name": "project-template",
   "scripts": {
-    "start": "run-p sass:watch tailwind:watch server",
+    "start": "run-p sass:watch server",
     "sass": "sass src/scss:src/style",
     "sass:watch": "npm run sass -- --watch",
-    "tailwind": "tailwind -i ./src/style/input.css -o ./src/style/output.css",
-    "tailwind:watch": "npm run tailwind -- --watch",
     "server": "live-server src",
     "clear": "rimraf src/style",
     "build": "postcss src/style/index.css -o src/style/main.css"
