@@ -29,7 +29,7 @@
   height: 31px;
   border: 0;
 }
-.cartIcon{
+.blackCart__Icon{
   display: block;
   background: url("../../images/Icon/Cart-black.png") no-repeat;
   width: 32px;
@@ -37,14 +37,6 @@
   border: 0;
 }
 
-
-// .blog{
-//   display: block;
-//   background: url("../../images/Icon/Blog.svg") no-repeat;
-//   width: 30px;
-//   height: 30px;
-//   border: 0;
-// }
 
 .blog{
   display: block;
@@ -84,4 +76,14 @@
   width: 30px;
   height: 30px;
   border: 0;
+}
+
+.cartIcon{
+  position: absolute;
+  display: block;
+  background: url("../../images/Icon/Cart_white.svg");
+  width: 45px;
+  height: 45px;
+  top:258px;
+  left: 189px;
 }
