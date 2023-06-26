@@ -337,7 +337,6 @@ body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font: inherit;
   background-color: #fff;
-  overflow: scroll;
 }
 
 /* 유연한 미디어 */
@@ -398,7 +397,7 @@ legend {
   display: block;
   background: url("../../images/Icon/Heart.png") no-repeat;
   width: 32px;
-  height: 30px;
+  height: 31px;
   border: 0;
 }
 
@@ -406,7 +405,7 @@ legend {
   display: block;
   background: url("../../images/Icon/Location.png") no-repeat;
   width: 32px;
-  height: 30px;
+  height: 31px;
   border: 0;
 }
 
@@ -414,15 +413,7 @@ legend {
   display: block;
   background: url("../../images/Icon/Cart-black.png") no-repeat;
   width: 32px;
-  height: 30px;
-  border: 0;
-}
-
-.blog {
-  display: block;
-  background: url("../../images/Icon/Blog.svg") no-repeat;
-  width: 30px;
-  height: 30px;
+  height: 31px;
   border: 0;
 }
 
@@ -576,6 +567,10 @@ header {
   position: absolute;
 }
 
+.formContainer {
+  position: relative;
+}
+
 .searchForm {
   width: 400px;
   border: 1.5px solid #5F0080;
@@ -586,8 +581,8 @@ header {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 35px;
-  right: 750px;
+  top: -30px;
+  right: -100px;
 }
 .searchForm label {
   overflow: hidden;
@@ -602,6 +597,7 @@ header {
   border: 0;
   width: 75%;
   padding: 10px 10px;
+  font-size: 18px;
 }
 
 .memberIcon {
@@ -947,6 +943,11 @@ footer {
   line-height: 160%;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+
+main {
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 /*# sourceMappingURL=index.css.map */

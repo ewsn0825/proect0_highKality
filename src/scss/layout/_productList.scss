@@ -1,0 +1,6 @@
+@use "../utils" as *;
+@use "../components" as *;
+
+main{
+  @include paddingPct(20);
+}
