@@ -2,7 +2,8 @@
 @use "../components" as *;
 
 .mainContainer {
-  // @include paddingPct(20);
+
+
   @include flexbox($direction: column, $items: center);
   font-family: Pretendard;
 
@@ -16,11 +17,104 @@
   line-height: 150%;
 }
 
+//제목 외 전체 컨테이너
+
 .productContainer {
+  width: 100%;
+  @include paddingPct(20);
   @include flexbox($items: flex-start);
 }
 
+//사이드바 영역
+
+.sideBar {
+  @include flexbox($direction: column);
+  flex: 1 0 0;
+}
+
+.product {
+  @include flexbox($direction: column, $items: flex-start);
+}
+
+.reset_img {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 160%;
+  color: $gray-300;
+}
+
+.brand__wrap {
+  @include flexbox($direction: column);
+}
+
+.brand__list {
+  @include flexbox($direction: column, $items: flex-start);
+
+  width: 220px;
+  padding: 12px 0px 12px 0px;
+
+  gap: 8px;
+
+  &:hover {
+    background: $gray-100;
+  }
+
+}
+
+.btn__list {
+  @include flexbox($justify: center, $items: center);
+  // padding: 12px 0px 12px 0px;
+
+  gap: 8px;
+
+  width: 220px;
+  height: 42px;
+  padding: 12px 0px 14px 0px;
+
+  border-bottom: 1px solid $gray-100;
+}
+
+
+.brand__link {
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  @include flexbox($items: center);
+
+  &::before {
+    content: "";
+    background: url("../../images/Icon/Check.svg");
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  &::after {
+    content: "1";
+    font-size: 12px;
+    color: $gray-300;
+    margin-left: 4px;
+  }
+}
+
+.sideBar__num {
+  @include flexbox($items: center);
+  gap: 8px;
+
+  &::after {
+    content: "1";
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 160%;
+    color: $gray-300;
+  }
+}
+
+// 프로덕트 메뉴바
 .menuContainer {
+  width: 100%;
   padding: 0px 0px 20px 0px;
   @include flexbox($justify: space-between, $items: center);
 }
@@ -56,9 +150,11 @@
   @include flexbox($direction: column);
   gap: 24px;
 }
-.product__list{
+
+.product__list {
   position: relative;
 }
+
 .product__wrap {
   @include flexbox;
   gap: 16px
@@ -79,7 +175,8 @@
   order: -1;
   // position: relative;
 }
-.product__img{
+
+.product__img {
   // position: relative;
 }
 
@@ -157,29 +254,25 @@
 
 }
 
-.productPage__wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: stretch;
-
-  // position: relative;
-}
-
-.productPage_link {
-  @include flexbox($items: center);
-  padding: 36px 0px 0px 0px;
-
-  // gap: -1px;
-}
-
 .movePage {
+  @include flexbox($direction:column,$items:center);
 
+}
+
+.movePage__wrap {
+  @include flexbox($items: center);
+  padding: 48px 0px 0px 0px;
+
+}
+
+
+//페이지 넘기기 버튼 영역
+
+.movePage__list {
+
+  position: relative;
   width: 34px;
   height: 34px;
-  // padding: 4px;
-  @include flexbox($justify: center, $items: center);
-  // gap: 4px;
   border: 1px solid $gray-100;
 
   &:hover {
@@ -187,50 +280,63 @@
   }
 }
 
+
+.movePage__link{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .doubleRight {
+  position: absolute;
   display: block;
   background: url("../../images/Icon/doubleRight.png") no-repeat;
   width: 10px;
-  height: 10px;
-  flex-shrink: 0;
-  // padding: 17px;
+  height: 8px;
+  
+  @include posCenter;
 
 }
 
 .right {
+  // padding: 20px;
+  position: absolute;
   display: block;
   background: url("../../images/Icon/right.png") no-repeat;
-  width: 10px;
-  height: 10px;
-  flex-shrink: 0;
+  width: 5px;
+  height: 8px;
+  
+  @include posCenter;
 
 }
 
 .pageNum {
-  display: block;
-  background: url("../../images/Icon/1.png") no-repeat;
-  width: 10px;
-  height: 10px;
-  flex-shrink: 0;
+  position: absolute;
+  font-size: 12px;
+  font-family: Inter;
+  color: $content;
+  
+  @include posCenter;
 
 }
 
 .doubleLeft {
+  position: absolute;
   display: block;
   background: url("../../images/Icon/doubleLeft.png") no-repeat;
   width: 10px;
-  height: 10px;
-  flex-shrink: 0;
+  height:8px;
+  
+  @include posCenter;
 
 }
 
 .left {
-  @include flexbox($justify: center, $items: center);
+  position: absolute;
+  display: block;
   background: url("../../images/Icon/left.png") no-repeat;
-  width: 10px;
-  height: 10px;
-  flex-shrink: 0;
-
-
+  width: 5px;
+  height: 8px;
+  @include posCenter;
 
 }
