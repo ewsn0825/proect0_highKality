@@ -1,9 +1,9 @@
 {
   "name": "project-template",
   "scripts": {
-    "start": "run-p sass:watch server",
+    "start": "run-p watch server",
     "sass": "sass src/scss:src/style",
-    "sass:watch": "npm run sass -- --watch",
+    "watch": "npm run sass -- --watch",
     "server": "live-server src",
     "clear": "rimraf src/style",
     "build": "postcss src/style/index.css -o src/style/main.css"
@@ -16,11 +16,6 @@
     "postcss-cli": "^10.1.0",
     "postcss-combine-media-query": "^1.0.1",
     "rimraf": "^5.0.1",
-    "sass": "^1.63.5",
-    "autoprefixer": "^10.4.14",
-    "postcss-import": "^14.1.0",
-    "postcss-nesting": "^10.2.0",
-    "postcss-preset-env": "^7.8.3",
-    "tailwindcss": "^3.3.2"
+    "sass": "^1.63.5"
   }
 }
