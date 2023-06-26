@@ -1,6 +1,6 @@
 @use "../utils" as *;
 @use "../components" as *;
 
-main{
+.mainContainer{
   @include paddingPct(20);
 }
