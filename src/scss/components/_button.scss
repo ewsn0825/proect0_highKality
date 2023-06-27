@@ -13,7 +13,74 @@
   border: 1px solid $gray-200;
   width: 140px;
   height: 40px;
-  
+
   // float: left;
   // padding: 10px 25px;
+}
+
+.search__button {
+  cursor: pointer;
+}
+
+.sideBar__button {
+
+  @include flexbox($justify: space-between, $items: center);
+
+  width: 220px;
+  height: 52px;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+
+  background: $white;
+  color: $content;
+
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid $gray-100;
+
+}
+
+.sideBar__button__clicked {
+  @include flexbox($justify: space-between, $items: center);
+
+  width: 220px;
+  height: 52px;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+
+  background: $white;
+  color: $content;
+
+  padding: 0;
+  border: 0;
+}
+
+.more__button {
+  // @include flexbox($items:center);
+
+  background: $white;
+  color: $gray-300;
+
+  cursor: pointer;
+
+  width: 100%;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 150%;
+
+  border: 0;
+  padding: 0;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    background: url("../../images/Icon/Arrow_right.svg") no-repeat;
+    width: 18px;
+    height: 14px;
+  }
+
 }
