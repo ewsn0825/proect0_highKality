@@ -79,8 +79,7 @@
   &__list {
     list-style: none;
     padding-left: 0;
-    display: flex;
-    justify-content: space-between;
+    @include flexbox($justify: space-between);
   }
   //상품 각 박스 부분
   &__product {
@@ -118,7 +117,7 @@
   // 상품사진 하단오른쪽에 있는 장바구니 버튼 
   &__cart {
     cursor: pointer;
-    position: absolute;
+    @include pos;
     bottom: 30%;
     right: 8%;
     background: #2a0038 url("/images/Icon/Cart.png");
