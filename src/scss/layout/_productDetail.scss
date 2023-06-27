@@ -1,0 +1,208 @@
+@use "../utils" as *;
+@use "../components" as *;
+
+
+.productDetail{
+  position: relative;
+  width: rem(1050px);
+  font-family: Pretendard;
+  font-size: rem(16px);
+
+  // height: 650px; 
+  @include autoMargin;
+  padding: rem(60px) 0;
+  box-sizing: border-box;
+
+  &__titleBox{
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: rem(18px);
+  }
+  &__starDelivery{
+    order: -1;
+    color: $gray-500;
+    font-size: rem(21px);
+    font-weight: 800;
+  }
+
+  &__title {
+    font-size: rem(27px);
+    font-weight: 700;
+  }
+  // &__image {
+  //   float: left;
+  // }
+
+  &__sub{
+    color: $gray-400;
+    line-height: 160%;
+  }
+  &__productcart, &__list, &__titleBox, &__productcart {
+    margin-left: 480px;
+    
+  }
+  &__image{
+    position: absolute;
+    top: 60px;
+
+  }
+  &__fontSizeXl{
+    color: $gray-800;
+    font-size: rem(29px);
+    font-weight: 600;
+    line-height: 150%;
+  }
+  &__fontSizeS {
+    color: $gray-800;
+    font-size: rem(16px);
+    font-weight: 700;
+    line-height: 140%;  
+  }
+  &__PurpleSpan {
+    color: $primary;
+    font-family: Pretendard;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 20px;
+  }
+  &__item{
+    display: flex;
+    padding: 16px 0px;
+    border-top: 1px solid $gray-100;
+    border-bottom: 1px solid $gray-100;
+    font-size: rem(12px);
+  }
+  &__item dt {
+    width: rem(128px);
+
+  }
+  &__item &__fontBold {
+    color: $gray-700;
+    width: rem(128px);
+    line-height: 150%;
+    margin-bottom: rem(10px);
+  }
+
+  &__item dd {
+    display: span;
+    color: $gray-500;
+  }
+
+
+  &__allegyDd {
+    display: block;
+    width: rem(432px);
+  }
+  //상품 선택
+  &__select {
+    position: relative;
+    width: rem(432px);
+    height: rem(83px);
+    border: rem(1px) solid $gray-100;
+    color: $gray-600;
+    font-weight: 600;
+    padding: rem(12px);
+  }
+  &__selectBox {
+    height: rem(30px);
+    width: rem(83px);
+    border: rem(1px) solid $gray-200;
+    margin-top: rem(12px);
+    text-align: center;
+  }
+  &__selectPrice{
+    position: absolute;
+    font-weight: 600;
+    bottom: rem(12px);
+    right: rem(12px);
+  }
+
+  &__plus{
+    background: url('/images/Icon/Plus.png');
+    width: 28px;
+    height: 30px;
+    border: none;
+    background-position: 50% 17%;
+    float: right;
+  }
+  &__minus{
+    background: url('/images/Icon/Minus.png');
+    width: 28px;
+    height: 30px;
+    border: none;
+    background-position: 50% 87%;
+    float: left;
+    
+  }
+  &__selectBoxOne {
+    display: inline-block;
+    padding: auto 0;
+    transform: translateY(8px);
+    font-weight: 800;
+
+  }
+  // &__productcart{
+  //   align-items: end;
+  // }
+  &__allPrice {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: rem(17px);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-top: rem(28px);
+
+  }
+  &__point{
+    margin-top: rem(9px);
+    text-align: end;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: rem(28px);
+  }
+  &__pointIcon{
+    border-radius: 12px;
+    background: $orange;
+    width: rem(34px);
+    height: rem(24px);
+    text-align: center;
+    color: $white;
+    font-size: 10px;
+    line-height: 160%;
+    padding: 4px 8px;
+    margin-right: 3px;
+
+  }
+  &__allButton {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    width: 56px;
+    height: 56px;
+    padding: 4px;
+    border: 1px solid $gray-100;
+    // background: $white;
+  }
+  &__heart{
+    background: url('/images/Icon/Squre.png');
+    background-position: 50% 89% ;
+  }
+  &__alarm{
+    background: url('/images/Icon/bell-2.png') no-repeat;
+    background-position: 55% 50%;
+  }
+  &__cartButton {
+    border-radius: 4px;
+    background: $purple;
+    width: rem(430px);
+    height: rem(54px);
+    color: $white;
+    font-weight: 600;
+  }
+}
+.productDetail__list .productDetail__item{
+  display: flex;
+}
