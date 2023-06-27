@@ -45,6 +45,11 @@
 }
 
 // 패딩 믹스인
+@mixin paddingXY($X,$Y){
+  @include paddingX($X);
+  @include paddingY($Y);
+  
+}
 
 @mixin padding($spacing){
   @include paddingX($spacing);
