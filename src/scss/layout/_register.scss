@@ -1,0 +1,38 @@
+@use "../utils" as *;
+
+.registrationContainer__form {
+  display: flex;
+  flex-direction: column;
+  @include paddingPct(25);
+}
+
+.field__label {
+  display: flex;
+  justify-content: space-between;
+  @include paddingY(15);
+
+}
+
+.field__question {
+  width: 20%
+}
+
+.field__input {
+  width: 55%
+}
+
+.field__button {
+  width: 25% checkbox__input
+}
+
+.checkbox__input {
+  width: 3%
+}
+
+.registrationContainer__title {
+  text-align: center;
+}
+
+.submitRegister {
+  width: 20%
+}
