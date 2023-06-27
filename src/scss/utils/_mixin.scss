@@ -129,3 +129,11 @@
   object-position: $posX,$posY;
 
 }
+
+//버튼 관련 mixin
+
+@mixin imgBtn($w,$h,$display:block){
+  width: rem($w);
+  height: rem($h);
+  display: $display;
+}

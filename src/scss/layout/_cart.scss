@@ -1,70 +1,70 @@
-@use "../utils" as *;
-@use "../components" as *;
+// @use "../utils" as *;
+// @use "../components" as *;
 
-input[type="checkbox"] {
-    display: none;
-  }
+// input[type="checkbox"] {
+//     display: none;
+//   }
 
-  .cartsection {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+//   .cartsection {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//   }
   
-  .cartlist {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+//   .cartlist {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+//   }
   
-  .right-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+//   .right-box {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//   }
   
-  .delivery-section {
-    padding-left: 24px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    background: url('https://res.kurly.com/pc/service/cart/2007/ico_location.svg') 0 50% no-repeat;
-    background-size: 20px 20px;
-    margin-bottom: 16px;
-  }
+//   .delivery-section {
+//     padding-left: 24px;
+//     font-size: 16px;
+//     font-weight: 500;
+//     line-height: 20px;
+//     background: url('https://res.kurly.com/pc/service/cart/2007/ico_location.svg') 0 50% no-repeat;
+//     background-size: 20px 20px;
+//     margin-bottom: 16px;
+//   }
   
-  .delivery-content {
-    padding-top: 12px;
-    font-size: 16px;
-    line-height: 24px;
-    color: #333;
-  }
+//   .delivery-content {
+//     padding-top: 12px;
+//     font-size: 16px;
+//     line-height: 24px;
+//     color: #333;
+//   }
   
-  .delivery-content p {
-    font-weight: 500;
-  }
+//   .delivery-content p {
+//     font-weight: 500;
+//   }
   
-  .delivery-content span {
-    white-space: nowrap;
-  }
+//   .delivery-content span {
+//     white-space: nowrap;
+//   }
   
-  button {
-    display: block;
-    padding: 0 10px;
-    text-align: center;
-    overflow: hidden;
-    width: 100%;
-    height: 36px;
-    border-radius: 3px;
-    color: #5f0080;
-    background-color: #fff;
-    border: 1px solid #5f0080;
-  }
+//   button {
+//     display: block;
+//     padding: 0 10px;
+//     text-align: center;
+//     overflow: hidden;
+//     width: 100%;
+//     height: 36px;
+//     border-radius: 3px;
+//     color: #5f0080;
+//     background-color: #fff;
+//     border: 1px solid #5f0080;
+//   }
   
-  button img {
-    vertical-align: top;
-  }
+//   button img {
+//     vertical-align: top;
+//   }
   
-  .price-section {
-    padding: 19px 18px 18px 20;
-  }
+//   .price-section {
+//     padding: 19px 18px 18px 20;
+//   }

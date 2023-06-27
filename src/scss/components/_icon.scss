@@ -2,107 +2,103 @@
 // 아이콘 이미지
 
 .searchIcon {
+  
   background: url("../../images/Icon/Search.png") no-repeat;
-  width: 40px;
-  height: 35px;
+
+  @include imgBtn($w:40,$h:35);
   border: 0;
+  
 }
 
-.cancelIcon {
-  background: url("../../images/Icon/Cancel.png") no-repeat;
-  width: 30px;
-  height: 30px;
-  border: 0;
-  float: right;
-}
 
 .heartIcon {
-  display: block;
+
+  @include imgBtn($w:32,$h:31);
+  
   background: url("../../images/Icon/Heart.png") no-repeat;
-  width: 32px;
-  height: 31px;
-  border: 0;
+  
 }
 
 .locationIcon {
-  display: block;
+  
   background: url("../../images/Icon/Location.png") no-repeat;
-  width: 32px;
-  height: 31px;
-  border: 0;
+  
+  @include imgBtn($w:32,$h:31);
+  
 }
 
 .blackCart__Icon {
-  display: block;
+  
   background: url("../../images/Icon/Cart-black.png") no-repeat;
-  width: 32px;
-  height: 31px;
-  border: 0;
+  
+  @include imgBtn($w:32,$h:31);
+  
 }
 
 
 .blog {
-  display: block;
+  
   background: url("../../images/Icon/Blog.svg") no-repeat;
-  width: 30px;
-  height: 30px;
-  border: 0;
+  
+  @include imgBtn($w:30,$h:30);
+  
 }
 
 .facebook {
-  display: block;
+  
   background: url("../../images/Icon/FaceBook.svg") no-repeat;
-  width: 30px;
-  height: 30px;
-  border: 0;
+  @include imgBtn($w:30,$h:30);
+  
+  
 }
 
 .instagram {
-  display: block;
+  
   background: url("../../images/Icon/Instagram.svg") no-repeat;
-  width: 30px;
-  height: 30px;
-  border: 0;
+  @include imgBtn($w:30,$h:30);
+  
+  
 }
 
 .naverPost {
-  display: block;
+  
   background: url("../../images/Icon/NaverPost.svg") no-repeat;
-  width: 30px;
-  height: 30px;
-  border: 0;
+  @include imgBtn($w:30,$h:30);
+  
+  
 }
 
 .youtube {
-  display: block;
+  
   background: url("../../images/Icon/Youtube.svg") no-repeat;
-  width: 30px;
-  height: 30px;
-  border: 0;
+  @include imgBtn($w:30,$h:30);
+  
+  
 }
 
 .cartIcon {
-  position: absolute;
-  display: block;
+  
+  
   background: url("../../images/Icon/Cart_white.svg") no-repeat;
-  width: 45px;
-  height: 45px;
+  @include imgBtn($w:45,$h:45);
+  
+  position: absolute;
   top: rem(258px);
   left: rem(189px);
 }
 
 .arrowTop {
-  display: block;
+  
   background: url("../../images/Icon/Arrow_top.svg") no-repeat;
-  width: 18px;
-  height: 18px;
+  
+  @include imgBtn($w:18,$h:18);
   flex-shrink: 0;
+
 }
 
 .arrowBottom {
-  display: block;
+  
   background: url("../../images/Icon/Arrow_bottom.svg") no-repeat;
-  width: 18px;
-  height: 18px;
+  @include imgBtn($w:18,$h:18);
   flex-shrink: 0;
 }
