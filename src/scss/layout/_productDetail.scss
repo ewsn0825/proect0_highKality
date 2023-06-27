@@ -79,13 +79,16 @@
   &__item &__fontBold {
     color: $gray-700;
     width: rem(128px);
+    line-height: 150%;
+    margin-bottom: rem(10px);
   }
 
   &__item dd {
     display: span;
     color: $gray-500;
   }
-  
+
+
   &__allegyDd {
     display: block;
     width: rem(432px);
@@ -137,6 +140,70 @@
     transform: translateY(8px);
     font-weight: 800;
 
+  }
+  // &__productcart{
+  //   align-items: end;
+  // }
+  &__allPrice {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: rem(17px);
+    font-size: 16px;
+font-weight: 600;
+line-height: 150%;
+    margin-top: rem(28px);
+
+  }
+  &__fontBolder {
+
+  }
+  &__point{
+    margin-top: rem(9px);
+    text-align: end;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: rem(28px);
+  }
+  &__pointIcon{
+    border-radius: 12px;
+    background: $orange;
+    width: rem(34px);
+    height: rem(24px);
+    text-align: center;
+    color: $white;
+    font-size: 10px;
+    line-height: 160%;
+    padding: 4px 8px;
+    margin-right: 3px;
+
+  }
+  &__allButton {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    width: 56px;
+    height: 56px;
+    padding: 4px;
+    border: 1px solid $gray-100;
+    // background: $white;
+  }
+  &__heart{
+    background: url('/images/Icon/Squre.png');
+    background-position: 50% 89% ;
+  }
+  &__alarm{
+    background: url('/images/Icon/bell-2.png') no-repeat;
+    background-position: 55% 50%;
+  }
+  &__cartButton {
+    border-radius: 4px;
+    background: $purple;
+    width: rem(430px);
+    height: rem(54px);
+    color: $white;
+    font-weight: 600;
   }
 }
 .productDetail__list .productDetail__item{

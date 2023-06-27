@@ -121,11 +121,13 @@
         <dl class="productDetail__list">
           <div class="productDetail__item">
             <dt>배송</dt>
-            <dd class="productDetail__fontBold">샛별배송</dd>
-            <dd>
-              23시 전 주문시 내일 아침 7시 전 도착<br />
-              &#40;대구 부산 울산 샛별배송 운영시&#59;간 별도 확인&#41;
-            </dd>
+            <div class="productDetail__listDiv">
+              <dd class="productDetail__fontBold">샛별배송</dd>
+              <dd>
+                23시 전 주문시 내일 아침 7시 전 도착<br />
+                &#40;대구 부산 울산 샛별배송 운영시&#59;간 별도 확인&#41;
+              </dd>
+            </div>
           </div>
           <div class="productDetail__item">
             <dt>판매자</dt>
@@ -133,8 +135,10 @@
           </div>
           <div class="productDetail__item">
             <dt>포장타입</dt>
-            <dd class="productDetail__fontBold">상온 (종이 포함)</dd>
-            <dd>택배배송은 에코 포장이 스티로폼으로 대체됩니다&#46;</dd>
+            <div class="productDetail__listDiv">
+              <dd class="productDetail__fontBold">상온 (종이 포함)</dd>
+              <dd>택배배송은 에코 포장이 스티로폼으로 대체됩니다&#46;</dd>
+            </div>
           </div>
           <div class="productDetail__item">
             <dt>판매단위</dt>
@@ -180,25 +184,29 @@
           <dl class="productDetail__allPrice">
             <dt>총 상품금액&#58;</dt>
             <dd aria-label="4980원">
-              <span class="productDetail__fontBolder">4&#44;980</span> 원
+              <span class="productDetail__fontSizeXl">4&#44;980</span> 원
             </dd>
           </dl>
-          <span class="productDetail__pointIcon">적립</span>
-          <span class="productDetail__point">로그인 후, 적립 혜택 제공</span>
-          <button
-            class="productDetail__heartButton"
-            aria-label="상품 좋아요 버튼"
-          ></button>
-          <button
-            class="productDetail__alarmButton"
-            aria-label="상품 알림 버튼"
-          ></button>
-          <button
-            class="productDetail__cartButton"
-            aria-label="장바구니 담기 버튼"
-          >
-            장바구니 담기
-          </button>
+          <div class="productDetail__point">
+            <span class="productDetail__pointIcon">적립</span>
+            <span>로그인 후, 적립 혜택 제공</span>
+          </div>
+          <div class="productDetail__allButton">
+            <button
+              class="productDetail__heart productDetail__button"
+              aria-label="상품 좋아요 버튼"
+            ></button>
+            <button
+              class="productDetail__alarm productDetail__button"
+              aria-label="상품 알림 버튼"
+            ></button>
+            <button
+              class="productDetail__cartButton"
+              aria-label="장바구니 담기 버튼"
+            >
+              장바구니 담기
+            </button>
+          </div>
         </div>
       </section>
     </main>
