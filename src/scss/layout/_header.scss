@@ -9,7 +9,7 @@ header {
   @include flexbox($direction: column, $justify: center);
   color: $content;
   box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.10);
-  font-family: Pretendard;
+  // font-family: Pretendard;
   // width: 1920px;
 
 }
@@ -77,37 +77,36 @@ header {
 //검색 폼 영역
 
 .formContainer {
-  position: relative;
-  // flex-grow: 1;
-  // margin-left: 20px;
+ 
+  margin-right: 120px;
+  // padding: 10px;
 }
 
 .searchForm {
+  
   width: 400px;
   border: 1.5px solid $primary;
   border-radius: 3px;
-  padding: 5px 5px;
+  padding: 10px 10px 10px 15px;
   @include flexbox($justify:space-between,$items:center);
-  position: absolute;
-  top: -30px;
-  right: -100px;
+  
+  font-size: 18px; 
 
   label {
     @include a11yHidden;
   }
 
   &__input {
+    width: 320px;
     border: 0;
-    width: 75%;
-    padding: 10px 10px;
-    font-size: 18px
-    
+    @include paddingY(10px);
+  
   }
 }
 
 .memberIcon {
   @include flexbox;
-  column-gap: 25px;
+  gap: 30px;
 
 }
 
@@ -122,7 +121,7 @@ header {
     font-weight: 600;
     width: 700px;
     @include flexbox($justify: space-around);
-   
+
   }
 }
 
