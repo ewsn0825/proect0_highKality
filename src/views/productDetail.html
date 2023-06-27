@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>마켓칼리-상품 상세페이지</title>
+    <title>마켓칼리</title>
 
     <link
       rel="stylesheet"
@@ -43,9 +43,10 @@
                 id="search"
                 class="searchForm__input"
                 required
-                placeholder="검색어를 입력해주세요."
+                placeholder="검색어를 입력해주세요"
               />
-              <button class="searchIcon search__button"></button>
+
+              <button type="submit" class="searchIcon search__button"></button>
             </form>
           </div>
 
@@ -55,17 +56,19 @@
               <a href="/" aria-label="배송지 설정" class="locationIcon"></a>
             </li>
             <li><a href="/" aria-label="찜하기" class="heartIcon"></a></li>
-            <li><a href="/" aria-label="장바구니" class="cartIcon"></a></li>
+            <li>
+              <a href="/" aria-label="장바구니" class="blackCart__Icon"></a>
+            </li>
           </ul>
         </div>
 
         <!-- 네비게이션 영역 -->
         <nav class="nav" role="navigation">
           <!-- 햄버거 버튼 카테고리 -->
-          <button class="nav__button">카테고리</button>
+          <button type="button" class="nav__button">카테고리</button>
           <ul class="nav__list">
             <li><a href="/">신상품</a></li>
-            <li><a href="/">베스트</a></li>
+            <li><a href="../views/productList.html">베스트</a></li>
             <li><a href="/">알뜰쇼핑</a></li>
             <li><a href="/">특가/혜택</a></li>
           </ul>
