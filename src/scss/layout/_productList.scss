@@ -32,16 +32,11 @@
   flex: 1 0 0;
 }
 
-.product {
+.product{
   @include flexbox($direction: column, $items: flex-start);
 }
 
-.reset_img {
-  font-size: 10px;
-  font-weight: 600;
-  line-height: 160%;
-  color: $gray-300;
-}
+
 
 .brand__wrap {
   @include flexbox($direction: column);
@@ -86,16 +81,16 @@
   &::before {
     content: "";
     background: url("../../images/Icon/Check.svg");
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
+    width: rem(24px);
+    height: rem(24px);
+    margin-right: rem(8px);
   }
 
   &::after {
     content: "1";
-    font-size: 12px;
+    font-size: rem(12px);
     color: $gray-300;
-    margin-left: 4px;
+    margin-left: rem(4px);
   }
 }
 
