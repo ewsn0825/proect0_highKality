@@ -15,18 +15,15 @@
 
  ### <strong>⭐Team members</strong>
 
- <img src="https://img.shields.io/badge/이재호(조장)-8572EE	?style=apple&logo=apple&logoColor=white"/>
-  <img src="https://img.shields.io/badge/김남진-8572EE	?style=flat&logo=apple&logoColor=white"/>
-    <img src="https://img.shields.io/badge/백상호(스크럼마스터)-8572EE		?style=flat&logo=apple&logoColor=white"/>
-      <img src="https://img.shields.io/badge/장효윤-8572EE		?style=flat&logo=apple&logoColor=white"/>   
-  
+이재호(조장)
+김남진(팀원)
+백상호(팀원, 스크럼마스터)
+장효윤(팀원)  
 <br/> 
 
  ### <strong>🔥SKILL</strong>
 
- <img src="https://img.shields.io/badge/HTML-F03F40?style=flat&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS-0000FF?style=flat&logo=css3&logoColor=white"/>
-    <img src="https://img.shields.io/badge/SASS-FF3CBB	?style=flat&logo=sass&logoColor=white"/>   
+ HTML, CSS, SCSS 
   
 <br/>
 
@@ -72,7 +69,7 @@
 
 진행자: 장효윤
 ### **🖥️Image**
- <img src="">
+ <img src="./src/images/finish/main_p.png" width=60%>
 
 
 ### **📌HTML 마크업 순서**(Main-page)
@@ -313,7 +310,7 @@
 
 진행자: 장효윤
 ### **🖥️Image**
- <img src="">
+ <img src="./src/images/finish/product-detail.png" width=60%>
 
 
 ### **📌HTML 순서**(Product Detail-page)
@@ -623,7 +620,7 @@
 
 진행자: 이재호
 ### **🖥️Image**
- <img src="">
+ <img src="./src/images/finish/product-list_p.png" width=60%>
 
 
 ### **📌HTML 순서** (productList-page)
@@ -1035,7 +1032,7 @@
 
 진행자: 백상호
 ### **🖥️Image**
- <img src="">
+ <img src="./src/images/finish/register_p.png" width=60%>
 
 
 ### **📌HTML 순서** (Register-page)
@@ -1125,7 +1122,7 @@
 
 진행자: 김남진
 ### **🖥️Image**
- <img src="">
+ <img src="./src/images/finish/login_p.png" width=60%>
 
 
 ### **📌HTML 순서** (login-page)
@@ -1263,7 +1260,7 @@
 
 진행자: 김남진
 ### **🖥️Image**
- <img src="">
+ <img src="./src/images/finish/cart_p.png" width=60%>
 
 
 ### **📌HTML 순서** (cart-page)
