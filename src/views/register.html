@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="kr-KR">
 
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>회원가입</title>
   <link rel="stylesheet" href="./../style/index.css" />
   <!-- <link rel="stylesheet" href="./../style/output.css" /> -->
-  <!-- <link rel="stylesheet" href="./style/register.css" /> -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
+
 </head>
+
 
 <body>
 
@@ -36,9 +40,11 @@
         <div class="formContainer">
           <form action="/" class="searchForm" method="post">
             <label for="search">검색어</label>
-            <input type="search" id="search" class="searchForm__input" required placeholder="검색어를 입력해주세요." />
-            <button class="searchIcon search__button"></button>
+            <input type="search" id="search" class="searchForm__input" required placeholder="검색어를 입력해주세요" />
+
+            <button type="submit" class="searchIcon search__button"></button>
           </form>
+
         </div>
 
 
@@ -47,17 +53,17 @@
         <ul class="memberIcon">
           <li><a href="/" aria-label="배송지 설정" class="locationIcon"></a></li>
           <li><a href="/" aria-label="찜하기" class="heartIcon"></a></li>
-          <li><a href="/" aria-label="장바구니" class="cartIcon"></a></li>
+          <li><a href="/" aria-label="장바구니" class="blackCart__Icon"></a></li>
         </ul>
       </div>
 
       <!-- 네비게이션 영역 -->
       <nav class="nav" role="navigation">
         <!-- 햄버거 버튼 카테고리 -->
-        <button class="nav__button">카테고리</button>
+        <button type="button" class="nav__button">카테고리</button>
         <ul class="nav__list">
           <li><a href="/">신상품</a></li>
-          <li><a href="/">베스트</a></li>
+          <li><a href="../views/productList.html">베스트</a></li>
           <li><a href="/">알뜰쇼핑</a></li>
           <li><a href="/">특가/혜택</a></li>
         </ul>
@@ -94,109 +100,165 @@
     </div>
   </header>
 
-  
+
   <main>
+
     <div class="registrationContainer">
 
       <h3 class="registrationContainer__title">회원가입</h3>
+      <span class="pilsu">필수 입력사항</span>
+      <hr class="register__hr" />
 
-      <form id="registrationForm" class="registrationContainer__form action="your-server-side-script" method="POST">
+      <form id="registrationForm" class="registrationContainer__form" action="myScript" method="POST">
 
-        <label class="field__label flex justify-between" for="username">
-          <span class="field__question">아이디</span>
 
-          <input class="field__input" type="text" id="username" name="username" required>
+        <div class="register__beOneLine">
+          <label class="register__label" for="username">아이디</label>
+          <input class="register__input" type="text" id="username" name="username" required placeholder="아이디를 입력해주세요">
+          <button class="register__button" onclick="">중복확인</button>
+        </div>
 
-          <button type="field__button">중복확인</button>
-        </label>
-        
-        <label class="field__label flex justify-between" for="password">
-          <span class="field__question">비밀번호</span>
 
-          <input class="field__input" type="password" id="password" name="password" required>
+        <div class="register__beOneLine">
+          <label class="register__label" for="password">비밀번호</label>
+          <input class="register__input" type="password" id="password" required placeholder="비밀번호를 입력해주세요">
+        </div>
 
-          <button type="field__button">중복확인</button>
-        </label>
-        
-        <!-- </form> -->
-        
-      <label class="field__label" for="passwordCheck">
-          <span class="field__question">비밀번호 확인</span>
-          <input class="field__input" type="password" id="passwordCheck" name="passwordCheck" required>
-          <button type="field__button">중복확인</button>
-      </label>
-      
-      <label class="field__label" for="name">
-        <span class="field__question">이름</span>
-        <input class="field__input" type="text" id="name" name="name" required>
-          <button type="field__button">중복확인</button>
-      </label>
-  
-      <label class="field__label" for="email">
-        <span class="field__question">이메일 주소</span>
-        <input class="field__input" type="email" id="email" name="email" required>
-          <button type="field__button">중복확인</button>
-      </label>
-      
-      <label class="field__label" for="phoneNumber">
-        <span class="field__question">전화번호</span>
-          <input class="field__input" type="tel" id="phoneNumber" name="phoneNumber" required>
-          <button type="field__button">중복확인</button>
-        </label>
-        
-        <label class="field__label" for="localAddress">
-          <span class="field__question">주소</span>
-          <input class="field__input" type="text" id="localAddress" name="localAddress" required>
-          <button type="field__button">중복확인</button>
-        </label>
-        
-        <fieldset class="field__label">
-          <span class="field__question">성별</span>
-          <legend class="field__gender">Gender</legend>
-          <label for="genderMale">
-            <input type="radio" id="genderMale" name="gender" value="Male">
-            남자
-          </label>
-          <label for="genderFemale">
-            <input type="radio" id="genderFemale" name="gender" value="Female">
-            여자
-          </label>
-          <label for="none">
-            <input type="radio" id="genderNone" name="gender" value="None">
-            선택 안함
-            <button type="field__button">중복확인</button>
-          </label>
-        </fieldset>
-        
-        <label class="field__label" for="birthdate">
-          <span class="field__question">생년월일</span>
-          <input class="field__input" type="date" id="birthdate" name="birthdate">
-          <button type="field__button">중복확인</button>
-        </label>
-        
-        
-        <fieldset class="field__label">
-          <span class="field__question">추가입력 사항</span>
-          <legend class="field__gender">Gender</legend>
-          <label for="genderMale">
-            <input type="radio" id="genderMale" name="gender" value="Male">
-            친구초대 추천 아이디
-          </label>
-          <label for="genderFemale">
-            <input type="radio" id="genderFemale" name="gender" value="Female">
-            참여 이벤트명
-          </label>
-          <button type="field__button">중복확인</button>
-        </fieldset>
 
-        <label class="field__label">
-          <span class="checkbox__label">이용약관 동의</span>
-          <input class="checkbox__input" type="checkbox" name="termsCheck" required>
-          <span class="checkbox__label">약관내용 - detail/summary</span>
-        </label>
-      
-        <input class="submitRegister" type="submit" value="가입하기">
+        <div class="register__beOneLine">
+          <label class="register__label" for="passwordCheck">비밀번호 확인</label>
+          <input class="register__input" type="password" id="passwordCheck" name="passwordCheck" required
+            placeholder="비밀번호를 한번 더 입력해주세요">
+          <button class="register__button" onclick="">일치확인</button>
+        </div>
+
+
+        <div class="register__beOneLine">
+          <label class="register__label" for="name">이름</label>
+          <input class="register__input" type="text" id="name" name="name" required placeholder="이름을 입력해주세요">
+        </div>
+
+
+        <div class="register__beOneLine">
+          <label class="register__label" for="email">이메일 주소</label>
+          <input class="register__input" type="email" id="email" name="email" required
+            placeholder="예) marketkarly@karly.com">
+
+          <button class="register__button">인증메일 발송</button>
+        </div>
+
+
+        <div class="register__beOneLine">
+          <label class="register__label" for="phoneNumber">전화번호</label>
+          <input class="register__input" type="tel" id="phoneNumber" name="phoneNumber" required
+            placeholder="숫자만 입력해주세요">
+          <button class="register__button" onclick="">인증번호 받기</button>
+        </div>
+
+
+        <div class="register__beOneLine">
+          <span class="register__question">주소</span>
+          <div class="addressBox">
+            <button class="register__input__address">주소 검색</button>
+            <span class="address__sub">배송지에 따라 상품 정보가 달라질 수 있습니다.
+            </span>
+          </div>
+        </div>
+
+
+        <div class="register__beOneLine">
+          <span class="register__question">성별</span>
+
+
+          <div class="register__radioS">
+
+            <div class="register__inputBox">
+              <input class="register__input__radio" type="radio" id="genderMale" value="Male" name="gender">
+              <label for="genderMale">남자</label>
+            </div>
+
+            <div class="register__inputBox">
+              <input class="register__input__radio" type="radio" id="genderFemale" value="Female" name="gender">
+              <label for="genderFemale">여자</label>
+            </div>
+
+            <div class="register__inputBox">
+              <input class="register__input__radio" type="radio" id="genderNone" value="None" name="gender">
+              <label for="genderNone">선택 안함</label>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="register__beOneLine">
+          <label class="register__label__date" for="birthdate">생년월일</label>
+          <input class="register__input__date" type="date" id="birthdate">
+        </div>
+
+
+        <div class="register__beOneLine">
+          <span class="register__question">추가입력 사항</span>
+
+
+          <div class="register__radioS">
+
+            <div class="register__inputBox">
+              <input class="register__input__radio" type="radio" id="register__introducerID">
+              <label for="register__introducerID">친구초대 추천 아이디</label>
+            </div>
+
+            <div class="register__inputBox">
+              <input class="register__input__radio" type="radio" id="register__event">
+              <label for="register__introducerID"> 참여 이벤트명</label>
+            </div>
+
+          </div>
+        </div>
+
+        <hr class="register__hr" />
+
+        <div class="register__beOneLine__term">
+          <span class="register__question__term">이용약관 동의</span>
+
+          <ul class="register__checkboxS">
+            <li class="register__listAll">
+              <div>
+                <input class="register__checkbox__input" type="checkbox" id="register__checkbox1">
+                <label for="register__checkbox1" class="register__checkboxAlltitle">전체 동의합니다.
+                </label>
+              </div>
+              <span class="register__allText">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</span>
+            </li>
+            <li>
+              <input class="register__checkbox__input" type="checkbox" id="register__checkbox1">
+              <label for="register__checkbox1">이용약관 동의 (필수)
+              </label>
+            </li>
+            <li>
+              <input class="register__checkbox__input" type="checkbox" id="register__checkbox2">
+              <label for="register__checkbox2">개인정보 수집 · 이용 동의 (필수)
+              </label>
+            </li>
+            <li>
+              <input class="register__checkbox__input" type="checkbox" id="register__checkbox3">
+              <label for="register__checkbox3">무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)
+              </label>
+            </li>
+            <li>
+              <input class="register__checkbox__input" type="checkbox" id="register__checkbox4">
+              <label for="register__checkbox4">본인은 만 14세 이상입니다. (필수)
+              </label>
+            </li>
+          </ul>
+
+        </div>
+        <hr class="register__hr" />
+
+        <button class="register__submitAll">가입하기</button>
+
       </form>
+
     </div>
 
 

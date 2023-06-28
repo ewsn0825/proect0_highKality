@@ -10,6 +10,13 @@ body {
   // overflow: scroll;
 }
 
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 /* 유연한 미디어 */
 img {
   max-width: 100%;

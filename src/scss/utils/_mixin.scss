@@ -134,3 +134,20 @@
   object-position: $posX,$posY;
 
 }
+
+//버튼 관련 mixin
+
+@mixin imgBtn($w,$h,$display:block){
+  width: rem($w);
+  height: rem($h);
+  display: $display;
+}
+
+// 가로세로 길이 지정
+@mixin wX($width1) {
+  width: $width1;
+}
+
+@mixin hRegi {
+  height: 40px;
+}
