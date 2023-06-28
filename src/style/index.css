@@ -1124,13 +1124,6 @@ footer {
   flex: 1 0 0;
 }
 
-.product {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
 .brand {
   display: flex;
   flex-flow: column nowrap;
@@ -1229,6 +1222,12 @@ footer {
   gap: 0.25rem;
 }
 
+.product {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 .product__line {
   display: flex;
   flex-flow: column nowrap;
@@ -1369,6 +1368,7 @@ footer {
   width: 600px;
   margin: 0 auto;
   padding-bottom: 40px;
+  font-family: pretendard;
 }
 
 .registrationContainer__form {
