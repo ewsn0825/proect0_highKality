@@ -137,3 +137,12 @@
   height: rem($h);
   display: $display;
 }
+
+// 가로세로 길이 지정
+@mixin wX($width1) {
+  width: $width1;
+}
+
+@mixin hRegi {
+  height: 40px;
+}
