@@ -15,18 +15,15 @@
 
  ### <strong>⭐Team members</strong>
 
- <img src="https://img.shields.io/badge/이재호(조장)-8572EE	?style=apple&logo=apple&logoColor=white"/>
-  <img src="https://img.shields.io/badge/김남진-8572EE	?style=flat&logo=apple&logoColor=white"/>
-    <img src="https://img.shields.io/badge/백상호(스크럼마스터)-8572EE		?style=flat&logo=apple&logoColor=white"/>
-      <img src="https://img.shields.io/badge/장효윤-8572EE		?style=flat&logo=apple&logoColor=white"/>   
-  
+이재호(조장)
+김남진(팀원)
+백상호(팀원, 스크럼마스터)
+장효윤(팀원)  
 <br/> 
 
  ### <strong>🔥SKILL</strong>
 
- <img src="https://img.shields.io/badge/HTML-F03F40?style=flat&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS-0000FF?style=flat&logo=css3&logoColor=white"/>
-    <img src="https://img.shields.io/badge/SASS-FF3CBB	?style=flat&logo=sass&logoColor=white"/>   
+ HTML, CSS, SCSS 
   
 <br/>
 
