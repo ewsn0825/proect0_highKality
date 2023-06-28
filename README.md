@@ -72,7 +72,7 @@
 
 진행자: 장효윤
 ### **🖥️Image**
- <img src="">
+ <img src="./src/images/finish/main_p.png" width=60%>
 
 
 ### **📌HTML 마크업 순서**(Main-page)
@@ -313,7 +313,7 @@
 
 진행자: 장효윤
 ### **🖥️Image**
- <img src="">
+ <img src="./src/images/finish/product-detail.png" width=60%>
 
 
 ### **📌HTML 순서**(Product Detail-page)
@@ -623,7 +623,7 @@
 
 진행자: 이재호
 ### **🖥️Image**
- <img src="">
+ <img src="./src/images/finish/product-list_p.png" width=60%>
 
 
 ### **📌HTML 순서** (productList-page)
@@ -1035,7 +1035,7 @@
 
 진행자: 백상호
 ### **🖥️Image**
- <img src="">
+ <img src="./src/images/finish/register_p.png" width=60%>
 
 
 ### **📌HTML 순서** (Register-page)
@@ -1125,7 +1125,7 @@
 
 진행자: 김남진
 ### **🖥️Image**
- <img src="">
+ <img src="./src/images/finish/login_p.png" width=60%>
 
 
 ### **📌HTML 순서** (login-page)
@@ -1263,7 +1263,7 @@
 
 진행자: 김남진
 ### **🖥️Image**
- <img src="">
+ <img src="./src/images/finish/cart_p.png" width=60%>
 
 
 ### **📌HTML 순서** (cart-page)
