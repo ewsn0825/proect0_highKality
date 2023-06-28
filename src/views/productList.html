@@ -7,7 +7,8 @@
 
   <title>마켓칼리 베스트</title>
 
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
   <link rel="stylesheet" href="../style/index.css" />
 </head>
 
@@ -15,50 +16,57 @@
 
 
   <header>
+
     <div class="headerContainer">
       <!-- 서치박스 영역 -->
       <div class="searchContainer">
+
         <!-- logo css에서 백그라운드 이미지 처리-->
         <div class="logoContainer">
           <h1 aria-label="마켓칼리">
-            <a href="/" class="logoKarly"></a>
+            <a href="/" class="logoKarly">
+              <span class="a11y">마켓컬리</span>
+            </a>
           </h1>
-          <!-- N 이미지 처리 해주어야함 -->
+
 
           <div class="switchContainer">
             <a href="/" class="market__link">마켓칼리</a>
             <span class="divider" aria-hidden="true">|</span>
             <a href="/" class="beauty__link">뷰티칼리</a>
           </div>
-        </div>
-        <!-- 검색 영역 -->
 
+        </div>
+
+        <!-- 검색 영역 -->
         <div class="formContainer">
           <form action="/" class="searchForm" method="post">
             <label for="search">검색어</label>
-            <input type="search" id="search" class="searchForm__input" required placeholder="검색어를 입력해주세요" />
+            <input type="search" id="search" class="searchForm__input" aria-label="검색창" required aria-required="true"
+              placeholder="검색어를 입력해주세요" />
 
-            <button type="submit" class="searchIcon search__button"></button>
+            <button type="submit" class="searchIcon search__button" aria-label="검색"></button>
           </form>
+
         </div>
 
+
+
         <!-- 아이콘 영역 -->
-        <ul class="memberIcon">
-          <li>
-            <a href="/" aria-label="배송지 설정" class="locationIcon"></a>
-          </li>
-          <li><a href="/" aria-label="찜하기" class="heartIcon"></a></li>
-          <li>
-            <a href="/views/cart.html" aria-label="장바구니" class="blackCart__Icon"></a>
-          </li>
+        <ul class="memberIcon" aria-label="멤버서비스 링크 아이콘">
+          <li><a href="/" class="locationIcon"><span class="a11y">배송지 설정</span></a></li>
+          <li><a href="/" class="heartIcon"><span class="a11y">찜하기</span></a></li>
+          <li><a href="/views/cart.html" class="blackCart__Icon"><span class="a11y">장바구니</span></a></li>
         </ul>
       </div>
 
+
+      <h2 class="a11y">HeaderNavigation</h2>
       <!-- 네비게이션 영역 -->
-      <nav class="nav" role="navigation">
+      <nav class="nav">
         <!-- 햄버거 버튼 카테고리 -->
         <button type="button" class="nav__button">카테고리</button>
-        <ul class="nav__list">
+        <ul class="nav__list" aria-label="네비게이션 주요 메뉴">
           <li><a href="/">신상품</a></li>
           <li><a href="/views/productList.html">베스트</a></li>
           <li><a href="/">알뜰쇼핑</a></li>
@@ -71,8 +79,9 @@
       </nav>
 
       <!-- 회원가입 영역 -->
-      <ul class="memberOnly">
+      <ul class="memberOnly" aria-label="멤버서비스">
         <li class="memberOnly__list">
+          <!-- <span class="divider" aria-hidden="true">ㅣ</span> -->
           <a href="/views/register.html" class="member__signUp">회원가입</a>
         </li>
         <li class="memberOnly__list">
@@ -82,14 +91,17 @@
         <li class="memberOnly__list">
           <span class="divider" aria-hidden="true">ㅣ</span>
           <a href="/" class="member__cusCenter">고객센터</a>
+
         </li>
       </ul>
+
     </div>
 
-    <div class="headerBanner">
-      <a class="headerBanner__link" href="/">지금 가입하고 인기상품 <span class="bold">100원</span>에
-        받아가세요!</a>
-      <button type="button" class="cancelIcon headerBanner__button"></button>
+
+    <div class="headerBanner" aria-label="헤더 배너">
+      <a class="headerBanner__link" href="/">지금 가입하고 인기상품 <span class="bold">100원</span>에 받아가세요!</a>
+      <button type="button" class="cancelIcon headerBanner__button" aria-label="닫기"></button>
+
     </div>
   </header>
 
