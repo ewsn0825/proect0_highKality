@@ -32,8 +32,6 @@
             <span class="divider" aria-hidden="true">|</span>
             <a href="/" class="beauty__link">뷰티칼리</a>
           </div>
-
-
         </div>
         <!-- 검색 영역 -->
 
@@ -44,16 +42,17 @@
 
             <button type="submit" class="searchIcon search__button"></button>
           </form>
-
         </div>
-
-
 
         <!-- 아이콘 영역 -->
         <ul class="memberIcon">
-          <li><a href="/" aria-label="배송지 설정" class="locationIcon"></a></li>
+          <li>
+            <a href="/" aria-label="배송지 설정" class="locationIcon"></a>
+          </li>
           <li><a href="/" aria-label="찜하기" class="heartIcon"></a></li>
-          <li><a href="/" aria-label="장바구니" class="blackCart__Icon"></a></li>
+          <li>
+            <a href="/views/cart.html" aria-label="장바구니" class="blackCart__Icon"></a>
+          </li>
         </ul>
       </div>
 
@@ -63,7 +62,7 @@
         <button type="button" class="nav__button">카테고리</button>
         <ul class="nav__list">
           <li><a href="/">신상품</a></li>
-          <li><a href="../views/productList.html">베스트</a></li>
+          <li><a href="/views/productList.html">베스트</a></li>
           <li><a href="/">알뜰쇼핑</a></li>
           <li><a href="/">특가/혜택</a></li>
         </ul>
@@ -76,27 +75,23 @@
       <!-- 회원가입 영역 -->
       <ul class="memberOnly">
         <li class="memberOnly__list">
-          <!-- <span class="divider" aria-hidden="true">ㅣ</span> -->
-          <a href="/" class="member__signUp">회원가입</a>
+          <a href="/views/register.html" class="member__signUp">회원가입</a>
         </li>
         <li class="memberOnly__list">
           <span class="divider" aria-hidden="true">ㅣ</span>
-          <a href="/" class="member__signIn">로그인</a>
+          <a href="/views/login.html" class="member__signIn">로그인</a>
         </li>
         <li class="memberOnly__list">
           <span class="divider" aria-hidden="true">ㅣ</span>
           <a href="/" class="member__cusCenter">고객센터</a>
-
         </li>
       </ul>
-
     </div>
 
-
     <div class="headerBanner">
-      <a class="headerBanner__link" href="/">지금 가입하고 인기상품 <span class="bold">100원</span>에 받아가세요!</a>
+      <a class="headerBanner__link" href="/">지금 가입하고 인기상품 <span class="bold">100원</span>에
+        받아가세요!</a>
       <button type="button" class="cancelIcon headerBanner__button"></button>
-
     </div>
   </header>
 

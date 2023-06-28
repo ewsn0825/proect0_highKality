@@ -16,59 +16,52 @@
 
 
   <header>
-
     <div class="headerContainer">
       <!-- 서치박스 영역 -->
       <div class="searchContainer">
-
         <!-- logo css에서 백그라운드 이미지 처리-->
         <div class="logoContainer">
           <h1 aria-label="마켓칼리">
-            <a href="/" class="logoKarly">
-              <span class="a11y">마켓컬리</span>
-            </a>
+            <a href="/" class="logoKarly"></a>
           </h1>
-
+          <!-- N 이미지 처리 해주어야함 -->
 
           <div class="switchContainer">
             <a href="/" class="market__link">마켓칼리</a>
             <span class="divider" aria-hidden="true">|</span>
             <a href="/" class="beauty__link">뷰티칼리</a>
           </div>
-
         </div>
-
         <!-- 검색 영역 -->
+
         <div class="formContainer">
           <form action="/" class="searchForm" method="post">
             <label for="search">검색어</label>
-            <input type="search" id="search" class="searchForm__input" aria-label="검색창" required aria-required="true"
-              placeholder="검색어를 입력해주세요" />
+            <input type="search" id="search" class="searchForm__input" required placeholder="검색어를 입력해주세요" />
 
-            <button type="submit" class="searchIcon search__button" aria-label="검색"></button>
+            <button type="submit" class="searchIcon search__button"></button>
           </form>
-
         </div>
 
-
-
         <!-- 아이콘 영역 -->
-        <ul class="memberIcon" aria-label="멤버서비스 링크 아이콘">
-          <li><a href="/" class="locationIcon"><span class="a11y">배송지 설정</span></a></li>
-          <li><a href="/" class="heartIcon"><span class="a11y">찜하기</span></a></li>
-          <li><a href="/" class="blackCart__Icon"><span class="a11y">장바구니</span></a></li>
+        <ul class="memberIcon">
+          <li>
+            <a href="/" aria-label="배송지 설정" class="locationIcon"></a>
+          </li>
+          <li><a href="/" aria-label="찜하기" class="heartIcon"></a></li>
+          <li>
+            <a href="/views/cart.html" aria-label="장바구니" class="blackCart__Icon"></a>
+          </li>
         </ul>
       </div>
 
-
-      <h2 class="a11y">HeaderNavigation</h2>
       <!-- 네비게이션 영역 -->
-      <nav class="nav">
+      <nav class="nav" role="navigation">
         <!-- 햄버거 버튼 카테고리 -->
         <button type="button" class="nav__button">카테고리</button>
-        <ul class="nav__list" aria-label="네비게이션 주요 메뉴">
+        <ul class="nav__list">
           <li><a href="/">신상품</a></li>
-          <li><a href="../views/productList.html">베스트</a></li>
+          <li><a href="/views/productList.html">베스트</a></li>
           <li><a href="/">알뜰쇼핑</a></li>
           <li><a href="/">특가/혜택</a></li>
         </ul>
@@ -79,29 +72,25 @@
       </nav>
 
       <!-- 회원가입 영역 -->
-      <ul class="memberOnly" aria-label="멤버서비스">
+      <ul class="memberOnly">
         <li class="memberOnly__list">
-          <!-- <span class="divider" aria-hidden="true">ㅣ</span> -->
-          <a href="/" class="member__signUp">회원가입</a>
+          <a href="/views/register.html" class="member__signUp">회원가입</a>
         </li>
         <li class="memberOnly__list">
           <span class="divider" aria-hidden="true">ㅣ</span>
-          <a href="/" class="member__signIn">로그인</a>
+          <a href="/views/login.html" class="member__signIn">로그인</a>
         </li>
         <li class="memberOnly__list">
           <span class="divider" aria-hidden="true">ㅣ</span>
           <a href="/" class="member__cusCenter">고객센터</a>
-
         </li>
       </ul>
-
     </div>
 
-
-    <div class="headerBanner" aria-label="헤더 배너">
-      <a class="headerBanner__link" href="/">지금 가입하고 인기상품 <span class="bold">100원</span>에 받아가세요!</a>
-      <button type="button" class="cancelIcon headerBanner__button" aria-label="닫기"></button>
-
+    <div class="headerBanner">
+      <a class="headerBanner__link" href="/">지금 가입하고 인기상품 <span class="bold">100원</span>에
+        받아가세요!</a>
+      <button type="button" class="cancelIcon headerBanner__button"></button>
     </div>
   </header>
 
@@ -132,16 +121,26 @@
           <span class="arrowTop"></span>
         </button>
         <ul class="brand" aria-label="브랜드별 상품 보기">
-          <li class="brand__list"><a href="" class="brand__link">감자밭<span class="grayNum" aria-hidden="true">1</span></a></li>
-          <li class="brand__list"><a href="" class="brand__link">강남면옥<span class="grayNum" aria-hidden="true">1</span></a></li>
-          <li class="brand__list"><a href="" class="brand__link">경남제약<span class="grayNum" aria-hidden="true">1</span></a></li>
-          <li class="brand__list"><a href="" class="brand__link">경복궁<span class="grayNum" aria-hidden="true">1</span></a></li>
-          <li class="brand__list"><a href="" class="brand__link">고래사<span class="grayNum" aria-hidden="true">1</span></a></li>
-          <li class="brand__list"><a href="" class="brand__link">고메공방<span class="grayNum" aria-hidden="true">1</span></a></li>
-          <li class="brand__list"><a href="" class="brand__link">고온어다이어트<span class="grayNum" aria-hidden="true">1</span></a></li>
-          <li class="brand__list"><a href="" class="brand__link">교토마블<span class="grayNum" aria-hidden="true">1</span></a></li>
-          <li class="brand__list"><a href="" class="brand__link">그래놀라 하우스<span class="grayNum" aria-hidden="true">1</span></a></li>
-          <li class="brand__list"><a href="" class="brand__link">그리츠 시그니처 램<span class="grayNum" aria-hidden="true">1</span></a></li>
+          <li class="brand__list"><a href="" class="brand__link">감자밭<span class="grayNum"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand__list"><a href="" class="brand__link">강남면옥<span class="grayNum"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand__list"><a href="" class="brand__link">경남제약<span class="grayNum"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand__list"><a href="" class="brand__link">경복궁<span class="grayNum"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand__list"><a href="" class="brand__link">고래사<span class="grayNum"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand__list"><a href="" class="brand__link">고메공방<span class="grayNum"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand__list"><a href="" class="brand__link">고온어다이어트<span class="grayNum"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand__list"><a href="" class="brand__link">교토마블<span class="grayNum"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand__list"><a href="" class="brand__link">그래놀라 하우스<span class="grayNum"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand__list"><a href="" class="brand__link">그리츠 시그니처 램<span class="grayNum"
+                aria-hidden="true">1</span></a></li>
           <li class="btn__list"><button type="button" class="more__button">브랜드 더보기</button></li>
         </ul>
 
@@ -195,7 +194,7 @@
 
         <div class="product__line" aria-label="상품정보" role="group">
           <ul class="product__wrap">
-            <li class="product__list"><a href="/" class="product__link">
+            <li class="product__list"><a href="/views/productDetail.html" class="product__link">
                 <span class="product__info">
                   <span class="tag" aria-label="상품태그 샛별배송">샛별배송</span>
                   <span aria-label="상품이름 풀무원 탱탱쫄면 사 개입">[풀무원] 탱탱쫄면 (4개입)</span>
@@ -254,7 +253,7 @@
               </a></li>
           </ul>
           <ul class="product__wrap">
-            <li class="product__list"><a href="/" class="product__link">
+            <li class="product__list"><a href="/views/productDetail.html" class="product__link">
                 <span class="product__info">
                   <span class="tag" aria-label="상품태그 샛별배송">샛별배송</span>
                   <span aria-label="상품이름 풀무원 탱탱쫄면 사 개입">[풀무원] 탱탱쫄면 (4개입)</span>
@@ -311,7 +310,7 @@
               </a></li>
           </ul>
           <ul class="product__wrap">
-            <li class="product__list"><a href="/" class="product__link">
+            <li class="product__list"><a href="/views/productDetail.html" class="product__link">
                 <span class="product__info">
                   <span class="tag" aria-label="상품태그 샛별배송">샛별배송</span>
                   <span aria-label="상품이름 풀무원 탱탱쫄면 사 개입">[풀무원] 탱탱쫄면 (4개입)</span>
@@ -368,7 +367,7 @@
               </a></li>
           </ul>
           <ul class="product__wrap">
-            <li class="product__list"><a href="/" class="product__link">
+            <li class="product__list"><a href="/views/productDetail.html" class="product__link">
                 <span class="product__info">
                   <span class="tag" aria-label="상품태그 샛별배송">샛별배송</span>
                   <span aria-label="상품이름 풀무원 탱탱쫄면 사 개입">[풀무원] 탱탱쫄면 (4개입)</span>
@@ -424,7 +423,7 @@
               </a></li>
           </ul>
           <ul class="product__wrap">
-            <li class="product__list"><a href="/" class="product__link">
+            <li class="product__list"><a href="/views/productDetail.html" class="product__link">
                 <span class="product__info">
                   <span class="tag" aria-label="상품태그 샛별배송">샛별배송</span>
                   <span aria-label="상품이름 풀무원 탱탱쫄면 사 개입">[풀무원] 탱탱쫄면 (4개입)</span>
