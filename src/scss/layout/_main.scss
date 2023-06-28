@@ -58,7 +58,6 @@
 
 }
 
-
 // 오늘 추천 상품 섹션 
 .recommendProduct {
   position: relative;
@@ -213,7 +212,7 @@
   border-radius: rem(16px);
   background: $white;
   box-shadow: 0 rem(8px) rem(36px) 0 $gray-200;
-  color: #333333;
+  color: $content;
   font-weight: 700;
   position: fixed;
   bottom: rem(10px);
@@ -223,7 +222,7 @@
     border-radius: rem(16px) rem(16px) 0 0;
   }
   & &__closeButton{
-    border-left: solid rem(1px) #e1e1e1;
+    border-left: solid rem(1px) $gray-100;
   }
   // 뷰티컬리 팝업 누르면 사라짐
   &:active {
