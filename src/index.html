@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
-  <link rel="stylesheet" href="../style/index.css" />
+  <link rel="stylesheet" href="./style/index.css" />
 </head>
 
 <body>
@@ -54,7 +54,7 @@
         <ul class="memberIcon" aria-label="멤버서비스 링크 아이콘">
           <li><a href="/" class="locationIcon"><span class="a11y">배송지 설정</span></a></li>
           <li><a href="/" class="heartIcon"><span class="a11y">찜하기</span></a></li>
-          <li><a href="/views/cart.html" class="blackCart__Icon"><span class="a11y">장바구니</span></a></li>
+          <li><a href="/src/views/cart.html" class="blackCart__Icon"><span class="a11y">장바구니</span></a></li>
         </ul>
       </div>
 
@@ -66,7 +66,7 @@
         <button type="button" class="nav__button">카테고리</button>
         <ul class="nav__list" aria-label="네비게이션 주요 메뉴">
           <li><a href="/">신상품</a></li>
-          <li><a href="/views/productList.html">베스트</a></li>
+          <li><a href="/src/views/productList.html">베스트</a></li>
           <li><a href="/">알뜰쇼핑</a></li>
           <li><a href="/">특가/혜택</a></li>
         </ul>
@@ -80,11 +80,11 @@
       <ul class="memberOnly" aria-label="멤버서비스">
         <li class="memberOnly__list">
           <!-- <span class="divider" aria-hidden="true">ㅣ</span> -->
-          <a href="/views/register.html" class="member__signUp">회원가입</a>
+          <a href="/src/views/register.html" class="member__signUp">회원가입</a>
         </li>
         <li class="memberOnly__list">
           <span class="divider" aria-hidden="true">ㅣ</span>
-          <a href="/views/login.html" class="member__signIn">로그인</a>
+          <a href="/src/views/login.html" class="member__signIn">로그인</a>
         </li>
         <li class="memberOnly__list">
           <span class="divider" aria-hidden="true">ㅣ</span>
@@ -108,7 +108,7 @@
     <section class="mainBanner">
       <h2 class="a11yHidden">메인 배너</h2>
       <figure class="mainBanner__imageBox">
-        <img class="mainBanner__image" src="/images/banner05.png" alt="메인 광고배너 이미지" />
+        <img class="mainBanner__image" src="/src/images/banner05.png" alt="메인 광고배너 이미지" />
         <figcaption class="a11yHidden">
           컬리 장보기의 특권&#44; 이 주의 특가 한 눈에 보기&#44; 우측 상단
           특가 혜택에서 확인하세요
@@ -129,12 +129,12 @@
       </h2>
       <ul class="recommendProduct__list">
         <li class="recommendProduct__product" aria-label="상품 일번">
-          <a href="/views/productDetail.html">
+          <a href="/src/views/productDetail.html">
             <figure class="recommendProduct__image">
-              <img src="/images/product01.png" alt="풀무원 탱탱쫄면 네개입 이미지" />
+              <img src="/src/images/product01.png" alt="풀무원 탱탱쫄면 네개입 이미지" />
             </figure>
           </a>
-          <a class="recommendProduct__name" href="/views/productDetail.html" aria-label="풀무원 탱탱쫄면 네개입">&#91;풀무원&#93;
+          <a class="recommendProduct__name" href="/src/views/productDetail.html" aria-label="풀무원 탱탱쫄면 네개입">&#91;풀무원&#93;
             탱탱쫄면 &#40;4개입&#41;</a>
           <span class="recommendProduct__price" aria-label="가격 사만구천팔십 원">4&#44;980 원</span>
           <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
@@ -142,7 +142,7 @@
         <li class="recommendProduct__product" aria-label="상품 이번">
           <a href="/">
             <figure class="recommendProduct__image">
-              <img src="/images/product02.png" alt="온더바디 죠르디 시카 자석 선쿠션 이미지" />
+              <img src="/src/images/product02.png" alt="온더바디 죠르디 시카 자석 선쿠션 이미지" />
             </figure>
           </a>
           <a class="recommendProduct__name" href="/" aria-label="온더바디 죠르디 시카 자석 선쿠션">&#91;온더바디&#93; 죠르디 시카 자석 선쿠션</a>
@@ -152,7 +152,7 @@
         <li class="recommendProduct__product" aria-label="상품 삼번">
           <a href="/">
             <figure class="recommendProduct__image">
-              <img src="/images/product03.png" alt="유기농 밀키퀀 현미 이미지" />
+              <img src="/src/images/product03.png" alt="유기농 밀키퀀 현미 이미지" />
             </figure>
           </a>
           <a class="recommendProduct__name" href="/" aria-label="유기농 밀키퀀 현미 사 키로그램">유기농 밀키퀀 현미 4kg</a>
@@ -162,7 +162,7 @@
         <li class="recommendProduct__product" aria-label="상품 사번">
           <a href="/">
             <figure class="recommendProduct__image">
-              <img src="/images/product04.png" alt="프로쉬 베이비 세탁세 이미지" />
+              <img src="/src/images/product04.png" alt="프로쉬 베이비 세탁세 이미지" />
             </figure>
           </a>
           <a class="recommendProduct__name" href="/" aria-label="프로쉬 베이비 세탁세">&#91;프로쉬&#93; 베이비 세탁세</a>
@@ -178,7 +178,7 @@
     <section class="lineBanner">
       <h2 class="a11yHidden">서브 라인 배너</h2>
       <figure class="lineBanner__imageBox">
-        <img class="lineBanner__image" src="/images/line-banner1.png" alt="서브 라인 광고배너 이미지" />
+        <img class="lineBanner__image" src="/src/images/line-banner1.png" alt="서브 라인 광고배너 이미지" />
         <figcaption class="a11yHidden">
           더 풍성해진 10월 퍼플위크 이벤트 진행&#44; 적립률 올라가고 3종
           쿠폰팩 증정
@@ -192,12 +192,12 @@
       </h2>
       <ul class="recommendProduct__list">
         <li class="recommendProduct__product" aria-label="상품 일번">
-          <a href="/views/productDetail.html">
+          <a href="/src/views/productDetail.html">
             <figure class="recommendProduct__image">
-              <img src="/images/product01.png" alt="풀무원 탱탱쫄면 네개입 이미지" />
+              <img src="/src/images/product01.png" alt="풀무원 탱탱쫄면 네개입 이미지" />
             </figure>
           </a>
-          <a class="recommendProduct__name" href="/views/productDetail.html" aria-label="풀무원 탱탱쫄면 네개입">&#91;풀무원&#93;
+          <a class="recommendProduct__name" href="/src/views/productDetail.html" aria-label="풀무원 탱탱쫄면 네개입">&#91;풀무원&#93;
             탱탱쫄면 &#40;4개입&#41;</a>
           <span class="recommendProduct__price" aria-label="가격 사천구백팔십 원">4&#44;980 원</span>
           <button class="recommendProduct__cart" aria-label="장바구니 버튼"></button>
@@ -205,7 +205,7 @@
         <li class="recommendProduct__product" aria-label="상품 이번">
           <a href="/">
             <figure class="recommendProduct__image">
-              <img src="/images/product02.png" alt="온더바디 죠르디 시카 자석 선쿠션 이미지" />
+              <img src="/src/images/product02.png" alt="온더바디 죠르디 시카 자석 선쿠션 이미지" />
             </figure>
           </a>
           <a class="recommendProduct__name" href="/" aria-label="온더바디 죠르디 시카 자석 선쿠션">&#91;온더바디&#93; 죠르디 시카 자석 선쿠션</a>
@@ -215,7 +215,7 @@
         <li class="recommendProduct__product" aria-label="상품 삼번">
           <a href="/">
             <figure class="recommendProduct__image">
-              <img src="/images/product03.png" alt="유기농 밀키퀀 현미 이미지" />
+              <img src="/src/images/product03.png" alt="유기농 밀키퀀 현미 이미지" />
             </figure>
           </a>
           <a class="recommendProduct__name" href="/" aria-label="유기농 밀키퀀 현미 4키로그램">유기농 밀키퀀 현미 4kg</a>
@@ -224,7 +224,7 @@
         </li>
         <li class="recommendProduct__product" aria-label="상품 사번">
           <figure class="recommendProduct__image">
-            <img src="/images/product04.png" alt="프로쉬 베이비 세탁세 이미지" />
+            <img src="/src/images/product04.png" alt="프로쉬 베이비 세탁세 이미지" />
           </figure>
           <a class="recommendProduct__name" href="/" aria-label="프로쉬 베이비 세탁세">&#91;프로쉬&#93; 베이비 세탁세</a>
           <span class="recommendProduct__sale" aria-label="세일 이십사 퍼센트">24&#37;</span>
@@ -241,18 +241,18 @@
         <h2>최근 본 상품</h2>
         <ul class="recentProduct__list">
           <li class="recentProduct__item">
-            <a href="/views/productDetail.html">
-              <img src="/images/product01.png" alt="풀무원 탱탱쫄면 네개입 이미지" />
+            <a href="/src/views/productDetail.html">
+              <img src="/src/images/product01.png" alt="풀무원 탱탱쫄면 네개입 이미지" />
             </a>
           </li>
           <li class="recentProduct__item">
             <a href="/">
-              <img src="/images/product04.png" alt="프로쉬 베이비 세탁세 이미지" />
+              <img src="/src/images/product04.png" alt="프로쉬 베이비 세탁세 이미지" />
             </a>
           </li>
           <li class="recentProduct__item">
             <a href="/">
-              <img src="/images/product02.png" alt="온더바디 죠르디 시카 자석 선쿠션 이미지" />
+              <img src="/src/images/product02.png" alt="온더바디 죠르디 시카 자석 선쿠션 이미지" />
             </a>
           </li>
         </ul>
@@ -263,7 +263,7 @@
     <!-- 뷰티 플랫폼 광고 팝업창 -->
     <aside class="mainPopup">
       <figure>
-        <img src="/images/mainPopup.png" alt="뷰티컬리 광고팝업창" />
+        <img src="/src/images/mainPopup.png" alt="뷰티컬리 광고팝업창" />
         <figcaption class="a11yHidden">
           처음 만나는 뷰티 플랫폼 뷰티컬리 지금바로 만나보세요
         </figcaption>
